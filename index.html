@@ -6,5 +6,73 @@
   </head>
   <body>
     <h1>Statamic Cheat Sheet</h1>
+
+    <section>
+    {{ current_date }}
+    </section>
+
+    <section>
+      <h2>Channel Entries</h2>
+      <p>{{ entries:listing }}</p>
+      <section>
+        <h3>Parameters</h3>
+        <ul>
+          <li>folder</li>
+          <li>taxonomy</li>
+          <li>show_hidden</li>
+          <li>since</li>
+          <li>until</li>
+          <li>show_past</li>
+          <li>show_future</li>
+          <li>conditions</li>
+          <li>sort_by</li>
+          <li>sort_dir</li>
+          <li>limit</li>
+          <li>offset</li>
+          <li>paginate</li>
+          <li>group_by_date</li>
+        </ul>
+      </section>
+    </section>
+
+    <section>
+      <h2>Pagination</h2>
+      <p>{{ entries:pagination }}</p>
+      <section>
+        <h3>Parameters</h3>
+        <ul>
+          <li>folder</li>
+          <li>taxonomy</li>
+          <li>show_hidden</li>
+          <li>since</li>
+          <li>until</li>
+          <li>show_past</li>
+          <li>show_future</li>
+          <li>conditions</li>
+          <li>sort_by</li>
+          <li>sort_dir</li>
+          <li>limit</li>
+          <li>offset</li>
+          <li>paginate</li>
+          <li>group_by_date</li>
+        </ul>
+      </section>
+    </section>
+
+    <section>
+      <h2>Entries Map</h2>
+      <p>{{ entries:map }}</p>
+      <section>
+        <h3>Parameters</h3>
+        <ul>
+          <li>center_point</li>
+          <li>locate_with</li>
+          <li>zoom</li>
+          <li>map_id</li>
+          <li>clusters</li>
+        </ul>
+      </section>
+    </section>
+
   </body>
 </html>

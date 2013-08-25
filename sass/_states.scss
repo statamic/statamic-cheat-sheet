@@ -7,8 +7,8 @@
 // A message may be in a success or error state.
 // States are generally applied to the same element as a layout rule or applied to the same element as a base module class.
 
-@media all and (max-width: 27em) {
+@media all and (min-width: 33em) {
   body {
-    font-size: 0.875em;
+    font-size: 100%;
   }
 }

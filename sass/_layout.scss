@@ -12,25 +12,7 @@
 .container {
   margin: 0 auto;
   padding: 0 1em;
-  max-width: 40em;
+  max-width: 90%;
 }
 header[role="banner"] { padding: 2em 0; }
 footer[role="contentinfo"] { padding: 2em; }
-
-
-// Layout Helpers
-// html {
-//   outline: 2px solid $black;
-// }
-// body {
-//   outline: 2px dashed $lightgrey;
-// }
-// article {
-//   outline: 1px dashed red;
-// }
-// div {
-//   outline: 1px dashed black; 
-// }
-// header, footer {
-//   outline: 2px dashed green;
-// }

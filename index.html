@@ -18,85 +18,90 @@
 
 <!-- scripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ theme:js src="libs/jquery-1.9.1.min" }}"><\/script>')</script>
-<script src="{{ theme:js src="libs/modernizr_dev" }}"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min" }}"><\/script>')</script>
+<script src="js/libs/modernizr.js"></script>
 <!--[if IE 8]>
-<script src="{{ theme:js src='libs/DOMAssistantCompressed-2.8.1' }}"></script>
-<script src="{{ theme:js src='libs/selectivizr-min' }}"></script>
+<script src="js/libs/DOMAssistantCompressed-2.8.1"></script>
+<script src="js/libs/selectivizr-min"></script>
 <![endif]-->
+
+<!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
   <body>
-    <h1>Statamic Cheat Sheet</h1>
-    <p>You can edit this page on <a href="https://github.com/statamicthemes/statamic-cheat-sheet/tree/gh-pages">github</a>.</p>
+    <header role="banner">
+      <div class="container">
+          <h1>Statamic Cheat Sheet</h1>
+          <p>You can edit this page on <a href="https://github.com/statamicthemes/statamic-cheat-sheet/tree/gh-pages">github</a>.</p>
+      </div><!-- END .container -->
+    </header>
 
-    <section>
-    {{ current_date }}
-    </section>
-
-    <section>
-      <h2>Channel Entries</h2>
-      <p>{{ entries:listing }}</p>
+    <div class="container">
       <section>
-        <h3>Parameters</h3>
-        <ul>
-          <li>folder</li>
-          <li>taxonomy</li>
-          <li>show_hidden</li>
-          <li>since</li>
-          <li>until</li>
-          <li>show_past</li>
-          <li>show_future</li>
-          <li>conditions</li>
-          <li>sort_by</li>
-          <li>sort_dir</li>
-          <li>limit</li>
-          <li>offset</li>
-          <li>paginate</li>
-          <li>group_by_date</li>
-        </ul>
+      <h2>{{ current_date }}</h2>
       </section>
-    </section>
 
-    <section>
-      <h2>Pagination</h2>
-      <p>{{ entries:pagination }}</p>
       <section>
-        <h3>Parameters</h3>
-        <ul>
-          <li>folder</li>
-          <li>taxonomy</li>
-          <li>show_hidden</li>
-          <li>since</li>
-          <li>until</li>
-          <li>show_past</li>
-          <li>show_future</li>
-          <li>conditions</li>
-          <li>sort_by</li>
-          <li>sort_dir</li>
-          <li>limit</li>
-          <li>offset</li>
-          <li>paginate</li>
-          <li>group_by_date</li>
-        </ul>
+        <h2>{{ entries:listing }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>folder</li>
+            <li>taxonomy</li>
+            <li>show_hidden</li>
+            <li>since</li>
+            <li>until</li>
+            <li>show_past</li>
+            <li>show_future</li>
+            <li>conditions</li>
+            <li>sort_by</li>
+            <li>sort_dir</li>
+            <li>limit</li>
+            <li>offset</li>
+            <li>paginate</li>
+            <li>group_by_date</li>
+          </ul>
+        </section>
       </section>
-    </section>
 
-    <section>
-      <h2>Entries Map</h2>
-      <p>{{ entries:map }}</p>
       <section>
-        <h3>Parameters</h3>
-        <ul>
-          <li>center_point</li>
-          <li>locate_with</li>
-          <li>zoom</li>
-          <li>map_id</li>
-          <li>clusters</li>
-        </ul>
+        <h2>{{ entries:pagination }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>folder</li>
+            <li>taxonomy</li>
+            <li>show_hidden</li>
+            <li>since</li>
+            <li>until</li>
+            <li>show_past</li>
+            <li>show_future</li>
+            <li>conditions</li>
+            <li>sort_by</li>
+            <li>sort_dir</li>
+            <li>limit</li>
+            <li>offset</li>
+            <li>paginate</li>
+            <li>group_by_date</li>
+          </ul>
+        </section>
       </section>
-    </section>
 
+      <section>
+        <h2>{{ entries:map }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>center_point</li>
+            <li>locate_with</li>
+            <li>zoom</li>
+            <li>map_id</li>
+            <li>clusters</li>
+          </ul>
+        </section>
+      </section>
+    </div><!-- END .container -->
   </body>
 </html>

@@ -9,11 +9,16 @@
 // Modules can sometimes sit within other Modules, too.
 // Each Module should be designed to exist as a standalone component.
 
+header[role="banner"] {
+  h1 { margin-bottom: 0; }
+  p { margin-top: 0; }
+}
 [role="main"] > section {
   padding-bottom: 2em;
   h2 {
     color: $white;
     padding: 0.5em;
+    letter-spacing: 0.1em;
     background-color: $mainColor;
   }
 }

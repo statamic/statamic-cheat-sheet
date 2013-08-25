@@ -43,6 +43,7 @@ strong, b {
 em, i {
   font-family: $italicFont;
 }
+small { display: block; text-align: center; }
 code { background-color: $lighterGrey; }
 pre code { background-color: transparent; }
 .screen-reader-text, .ir { @include squish-text; }

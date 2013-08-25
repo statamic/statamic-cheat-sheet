@@ -446,25 +446,30 @@ em, i {
   font-family: "Oxygen", sans-serif; }
 
 /* line 46, ../sass/_base.scss */
+small {
+  display: block;
+  text-align: center; }
+
+/* line 47, ../sass/_base.scss */
 code {
   background-color: #e6e6e6; }
 
-/* line 47, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 pre code {
   background-color: transparent; }
 
-/* line 48, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 .screen-reader-text, .ir {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent; }
 
-/* line 49, ../sass/_base.scss */
+/* line 50, ../sass/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 51, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 blockquote {
   margin-left: 0;
   font-size: 1.3em;
@@ -472,57 +477,57 @@ blockquote {
   color: #404054;
   border-left: 0.3em solid #c3c3d0; }
 
-/* line 58, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 dt {
   font-weight: bold; }
 
-/* line 59, ../sass/_base.scss */
+/* line 60, ../sass/_base.scss */
 dd {
   margin-bottom: 1em; }
 
-/* line 62, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 table {
   width: 100%;
   color: #404054;
   background-color: white;
   border: 0.1em solid gray; }
-  /* line 68, ../sass/_base.scss */
+  /* line 69, ../sass/_base.scss */
   table caption {
     font-weight: bold; }
-  /* line 69, ../sass/_base.scss */
+  /* line 70, ../sass/_base.scss */
   table thead {
     text-align: left;
     text-align: center;
     background-color: #d9d9d9; }
-    /* line 74, ../sass/_base.scss */
+    /* line 75, ../sass/_base.scss */
     table thead th {
       border-color: gray; }
-  /* line 76, ../sass/_base.scss */
+  /* line 77, ../sass/_base.scss */
   table th, table td {
     padding: 0.5em;
     border: 0.1em solid gray; }
-  /* line 77, ../sass/_base.scss */
+  /* line 78, ../sass/_base.scss */
   table td {
     text-align: left; }
-  /* line 79, ../sass/_base.scss */
+  /* line 80, ../sass/_base.scss */
   table th[scope="row"] {
     font-weight: normal; }
-  /* line 80, ../sass/_base.scss */
+  /* line 81, ../sass/_base.scss */
   table th[scope="rowgroup"] {
     vertical-align: middle; }
-  /* line 82, ../sass/_base.scss */
+  /* line 83, ../sass/_base.scss */
   table th[scope="row"],
   table th[scope="rowgroup"] {
     text-align: left; }
-  /* line 84, ../sass/_base.scss */
+  /* line 85, ../sass/_base.scss */
   table tbody tr:nth-of-type(even) {
     background-color: #f7f7f7; }
-  /* line 87, ../sass/_base.scss */
+  /* line 88, ../sass/_base.scss */
   table tfoot {
     font-size: 75%;
     color: #404054;
     background-color: #d9d9d9; }
-    /* line 92, ../sass/_base.scss */
+    /* line 93, ../sass/_base.scss */
     table tfoot td {
       text-align: center; }
 
@@ -540,19 +545,31 @@ table {
 
 /* line 17, ../sass/_layout.scss */
 header[role="banner"] {
-  padding: 2em 0; }
+  padding: 0.5em 0;
+  background-color: #f5f4ee;
+  border-bottom: 0.1em solid #eceade; }
 
-/* line 18, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
 footer[role="contentinfo"] {
-  padding: 2em; }
+  padding: 1em;
+  background-color: #f5f4ee;
+  border-top: 0.1em solid #eceade; }
 
-/* line 12, ../sass/_modules.scss */
+/* line 13, ../sass/_modules.scss */
+header[role="banner"] h1 {
+  margin-bottom: 0; }
+/* line 14, ../sass/_modules.scss */
+header[role="banner"] p {
+  margin-top: 0; }
+
+/* line 16, ../sass/_modules.scss */
 [role="main"] > section {
   padding-bottom: 2em; }
-  /* line 14, ../sass/_modules.scss */
+  /* line 18, ../sass/_modules.scss */
   [role="main"] > section h2 {
     color: white;
     padding: 0.5em;
+    letter-spacing: 0.1em;
     background-color: #354144; }
 
 @media all and (min-width: 33em) {

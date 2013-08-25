@@ -14,5 +14,13 @@
   padding: 0 1em;
   max-width: 90%;
 }
-header[role="banner"] { padding: 2em 0; }
-footer[role="contentinfo"] { padding: 2em; }
+header[role="banner"] {
+  padding: 0.5em 0;
+  background-color: $headerBg;
+  border-bottom: 0.1em solid darken($headerBg, 5%);
+}
+footer[role="contentinfo"] {
+  padding: 1em;
+  background-color: $footerBg;
+  border-top: 0.1em solid darken($footerBg, 5%);
+}

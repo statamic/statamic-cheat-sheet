@@ -1,0 +1,19 @@
+// =====================================
+// MODULE RULES
+// =====================================
+
+// A Module is a more discrete component of the page.
+// It is your navigation bars and your carousels and your dialogues and your widgets and so on.
+// This is the meat of the page.
+// Modules sit inside Layout components.
+// Modules can sometimes sit within other Modules, too.
+// Each Module should be designed to exist as a standalone component.
+
+[role="main"] > section {
+  padding-bottom: 2em;
+  h2 {
+    color: $white;
+    padding: 0.5em;
+    background-color: $mainColor;
+  }
+}

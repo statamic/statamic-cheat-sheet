@@ -1,0 +1,59 @@
+// ===============================================
+// All variables to be used in your theme go here. 
+// ===============================================
+
+// ===================
+// COLOURS
+// ===================
+
+// greyscale
+
+$black        :  rgb(0, 0, 0);
+$darkGrey     :  lighten($black, 25%);
+$grey         :  lighten($black, 50%);
+$lightGrey    :  lighten($black, 75%);
+$lighterGrey  :  lighten($black, 90%);
+$white        :  rgb(255, 255, 255);
+
+// site colours
+
+$mainColor    :  rgb(53, 65, 68);
+$compColor    :  rgb(250, 82, 42);
+$bodyBg       :  $white;
+$htmlBg       :  rgb(236, 240, 241);
+$fontColor    :  lighten(rgb(20, 20, 26), 20%);
+$headingColor :  rgb(20, 20, 26);
+$borderColor  :  $lightGrey;
+$callColor    :  rgb(39, 174, 96);
+
+// links
+
+$normal       :  $compColor;
+$hover        :  darken($compColor, 15%);
+$active       :  darken($compColor, 15%);
+$visited      :  $normal;
+$focus        :  darken($compColor, 15%);
+
+// tables
+$tableBg          :  $white;
+$tableBorderColor :  $grey;
+$tableFontColor   :  $fontColor;
+
+
+// header,footer & nav
+$headerBg         : rgb(45, 53, 56);
+$footerBg         : rgb(236, 240, 241);
+$navNormal        : $grey;
+$navHover         : lighten($navNormal, 10%);
+$navActive        : lighten($navNormal, 10%);
+$navVisited       : $navNormal;
+$navFocus         : $navHover;
+
+// ===================
+// FONTS
+// ===================
+
+$mainFont     :  'Oxygen', sans-serif;
+$headingFont  :  'Oxygen', sans-serif;
+$italicFont   :  $mainFont;
+$boldFont     :  $mainFont;

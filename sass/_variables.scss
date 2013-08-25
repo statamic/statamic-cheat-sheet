@@ -17,8 +17,8 @@ $white        :  rgb(255, 255, 255);
 
 // site colours
 
-$mainColor    :  rgb(41, 128, 185);
-$compColor    :  rgb(231, 76, 60);
+$mainColor    :  rgb(53, 65, 68);
+$compColor    :  rgb(250, 82, 42);
 $bodyBg       :  $white;
 $htmlBg       :  rgb(236, 240, 241);
 $fontColor    :  lighten(rgb(20, 20, 26), 20%);
@@ -28,11 +28,11 @@ $callColor    :  rgb(39, 174, 96);
 
 // links
 
-$normal       :  $mainColor;
-$hover        :  darken($mainColor, 15%);
-$active       :  darken($mainColor, 15%);
+$normal       :  $compColor;
+$hover        :  darken($compColor, 15%);
+$active       :  darken($compColor, 15%);
 $visited      :  $normal;
-$focus        :  darken($mainColor, 15%);
+$focus        :  darken($compColor, 15%);
 
 // tables
 $tableBg          :  $white;

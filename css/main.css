@@ -383,25 +383,32 @@ body {
 /* line 22, ../sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #14141a;
-  font-family: "Oxygen", sans-serif; }
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
 
-/* line 23, ../sass/_base.scss */
+/* line 28, ../sass/_base.scss */
 h1 {
   margin-top: 0; }
 
-/* line 24, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
+h2 {
+  font-size: 1.2em; }
+
+/* line 30, ../sass/_base.scss */
 h3 {
+  font-size: 1.1em;
   margin-bottom: 0.5em; }
 
-/* line 25, ../sass/_base.scss */
+/* line 31, ../sass/_base.scss */
 h4, h5, h6 {
   margin-bottom: 0; }
 
-/* line 26, ../sass/_base.scss */
+/* line 32, ../sass/_base.scss */
 h3 + p, h4 + p, h5 + p, h6 + p {
   margin-top: 0; }
 
-/* line 27, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 a {
   text-decoration: none;
   -webkit-transition-duration: 0.1s;
@@ -416,48 +423,48 @@ a {
   -moz-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
-  color: #2980b9; }
+  color: #fa522a; }
   /* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
-    color: #2980b9; }
+    color: #fa522a; }
   /* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
-    color: #1b557a; }
+    color: #d32c05; }
   /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
-    color: #1b557a; }
+    color: #d32c05; }
   /* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
-    color: #1b557a; }
+    color: #d32c05; }
 
-/* line 34, ../sass/_base.scss */
+/* line 40, ../sass/_base.scss */
 strong, b {
   font-family: "Oxygen", sans-serif; }
 
-/* line 37, ../sass/_base.scss */
+/* line 43, ../sass/_base.scss */
 em, i {
   font-family: "Oxygen", sans-serif; }
 
-/* line 40, ../sass/_base.scss */
+/* line 46, ../sass/_base.scss */
 code {
   background-color: #e6e6e6; }
 
-/* line 41, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
 pre code {
   background-color: transparent; }
 
-/* line 42, ../sass/_base.scss */
+/* line 48, ../sass/_base.scss */
 .screen-reader-text, .ir {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent; }
 
-/* line 43, ../sass/_base.scss */
+/* line 49, ../sass/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 45, ../sass/_base.scss */
+/* line 51, ../sass/_base.scss */
 blockquote {
   margin-left: 0;
   font-size: 1.3em;
@@ -465,57 +472,57 @@ blockquote {
   color: #404054;
   border-left: 0.3em solid #c3c3d0; }
 
-/* line 52, ../sass/_base.scss */
+/* line 58, ../sass/_base.scss */
 dt {
   font-weight: bold; }
 
-/* line 53, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 dd {
   margin-bottom: 1em; }
 
-/* line 56, ../sass/_base.scss */
+/* line 62, ../sass/_base.scss */
 table {
   width: 100%;
   color: #404054;
   background-color: white;
   border: 0.1em solid gray; }
-  /* line 62, ../sass/_base.scss */
+  /* line 68, ../sass/_base.scss */
   table caption {
     font-weight: bold; }
-  /* line 63, ../sass/_base.scss */
+  /* line 69, ../sass/_base.scss */
   table thead {
     text-align: left;
     text-align: center;
     background-color: #d9d9d9; }
-    /* line 68, ../sass/_base.scss */
+    /* line 74, ../sass/_base.scss */
     table thead th {
       border-color: gray; }
-  /* line 70, ../sass/_base.scss */
+  /* line 76, ../sass/_base.scss */
   table th, table td {
     padding: 0.5em;
     border: 0.1em solid gray; }
-  /* line 71, ../sass/_base.scss */
+  /* line 77, ../sass/_base.scss */
   table td {
     text-align: left; }
-  /* line 73, ../sass/_base.scss */
+  /* line 79, ../sass/_base.scss */
   table th[scope="row"] {
     font-weight: normal; }
-  /* line 74, ../sass/_base.scss */
+  /* line 80, ../sass/_base.scss */
   table th[scope="rowgroup"] {
     vertical-align: middle; }
-  /* line 76, ../sass/_base.scss */
+  /* line 82, ../sass/_base.scss */
   table th[scope="row"],
   table th[scope="rowgroup"] {
     text-align: left; }
-  /* line 78, ../sass/_base.scss */
+  /* line 84, ../sass/_base.scss */
   table tbody tr:nth-of-type(even) {
     background-color: #f7f7f7; }
-  /* line 81, ../sass/_base.scss */
+  /* line 87, ../sass/_base.scss */
   table tfoot {
     font-size: 75%;
     color: #404054;
     background-color: #d9d9d9; }
-    /* line 86, ../sass/_base.scss */
+    /* line 92, ../sass/_base.scss */
     table tfoot td {
       text-align: center; }
 
@@ -540,8 +547,13 @@ footer[role="contentinfo"] {
   padding: 2em; }
 
 /* line 12, ../sass/_modules.scss */
-section {
-  border-bottom: 0.1em solid #e6e6e6; }
+[role="main"] > section {
+  padding-bottom: 2em; }
+  /* line 14, ../sass/_modules.scss */
+  [role="main"] > section h2 {
+    color: white;
+    padding: 0.5em;
+    background-color: #354144; }
 
 @media all and (min-width: 33em) {
   /* line 11, ../sass/_states.scss */

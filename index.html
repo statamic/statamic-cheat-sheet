@@ -38,11 +38,7 @@
       </div><!-- END .container -->
     </header>
 
-    <div class="container">
-      <section>
-      <h2>{{ current_date }}</h2>
-      </section>
-
+    <div role="main" class="container">
       <section>
         <h2>{{ entries:listing }}</h2>
         <section>
@@ -102,6 +98,410 @@
           </ul>
         </section>
       </section>
+
+      <section>
+        <h2>{{ get:[variable] }}</h2>
+        <p>There are no parameters for this tag.</p>
+      </section>
+
+      <section>
+        <h2>{{ get_content }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>from</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ get_files }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>match</li>
+            <li>extension</li>
+            <li>in</li>
+            <li>not_in</li>
+            <li>file_size</li>
+            <li>file_date</li>
+            <li>depth</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ get:post[variable] }}</h2>
+        <p>There are no parameters for this tag.</p>
+      </section>
+
+      <section>
+        <h2>{{ member:login }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>return</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ member:logout }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>return</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ member:profile }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>member</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ member:listing }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>role</li>
+            <li>limit</li>
+            <li>offset</li>
+            <li>sort_by</li>
+            <li>sort_dir</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ nav }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>from</li>
+            <li>exclude</li>
+            <li>max_depth</li>
+            <li>include_entries</li>
+            <li>folders_only</li>
+            <li>include_content</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Variables</h3>
+          <ul>
+            <li>is_current</li>
+            <li>is_parent</li>
+            <li>url</li>
+            <li>title</li>
+            <li>children</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ nav:count }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>from</li>
+            <li>max_depth</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ nav:breadcrumbs }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>url</li>
+            <li>include_home</li>
+            <li>reverse</li>
+            <li>backspace</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ obfuscate }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <p>There are no parameters for this tag.</p>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ pages:listing }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>folder</li>
+            <li>taxonomy</li>
+            <li>show_hidden</li>
+            <li>conditions</li>
+            <li>sort_by</li>
+            <li>sort_dir</li>
+            <li>limit</li>
+            <li>offset</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Available Tags</h3>
+          <ul>
+            <li>first</li>
+            <li>last</li>
+            <li>index</li>
+            <li>zero_index</li>
+            <li>total_results</li>
+          </ul> 
+        </section>  
+      </section>
+
+      <section>
+        <h2>{{ path }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>post:[variable]</h2>
+        <section>
+          <h3>Parameters</h3>
+          <p>There are no parameters for this tag.</p>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ redirect }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>url</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ switch }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>between</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ taxonomy:listing }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>type</li>
+            <li>folder</li>
+            <li>min_count</li>
+            <li>sort_by</li>
+            <li>sort_dir</li>
+            <li>limit</li>
+          </ul>     
+        </section>
+        <section>
+          <h3>Available Tags</h3>
+          <ul>
+            <li>name</li>
+            <li>url</li>
+            <li>slug</li>
+            <li>count</li>
+            <li>first</li>
+            <li>last</li>
+            <li>results</li>
+            <li>total_results</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ theme:partial }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ theme:asset }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ theme:js }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ theme:css }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ theme:img }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ transform }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>src</li>
+            <li>destination</li>
+            <li>quality</li>
+            <li>width</li>
+            <li>height</li>
+            <li>
+              action (default:resize)
+              <ul>
+                <li>resize</li>
+                <li>crop</li>
+                <li>smart</li>
+              </ul>
+            </li>
+            <li>ratio</li>
+            <li>upsize</li>
+            <li>pos_x</li>
+            <li>pos_y</li>
+            <li>rotate</li>
+            <li>flip</li>
+            <li>blur</li>
+            <li>pixelate</li>
+            <li>greyscale</li>
+            <li>
+              type
+              <ul>
+                <li>jpg</li>
+                <li>png</li>
+                <li>gif</li>
+              </ul>
+            </li>
+          </ul>     
+        </section>
+      </section>
+
+      <section>
+        <h2>{{ current_date }}</h2>
+        <section>
+          <h3>Parameters</h3>
+          <ul>
+            <li>format</li>
+          </ul>
+        </section>
+        <table>
+          <thead>
+            <tr>
+              <th>Format</th>
+              <th>Returned Values</th>
+            </tr>
+          </thead>
+
+          <tfoot>
+            <tr>
+              <td colspan="2"><a href="http://uk1.php.net/manual/en/function.date.php">Taken from the PHP Manual</a></td>
+            </tr>
+          </tfoot>
+
+          <tbody>
+            <tr>
+              <td>d</td>
+              <td>01 to 31</td>
+            </tr> 
+            <tr>
+              <td>D</td>
+              <td>Mon through Sun</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>1 to 31</td>
+            </tr>
+            <tr>
+              <td>l</td>
+              <td>Sunday through Saturday</td>
+            </tr>
+            <tr>
+              <td>N</td>
+              <td>1 (Monday) to 7 (Sunday)</td>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>st, nd, rd or th</td>
+            </tr>
+            <tr>
+              <td>W</td>
+              <td>0 (Sunday) to 6 (Saturday)</td>
+            </tr>
+            <tr>
+              <td>Z</td>
+              <td>0 through 365</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>January through December</td>
+            </tr>
+            <tr>
+              <td>m</td>
+              <td>01 through 12</td>
+            </tr>
+            <tr>
+              <td>m</td>
+              <td>01 through 12</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>Jan through Dec</td>
+            </tr>
+            <tr>
+              <td>n</td>
+              <td>1 through 12</td>
+            </tr>
+            <tr>
+              <td>t</td>
+              <td>28 through 31</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
     </div><!-- END .container -->
   </body>
 </html>

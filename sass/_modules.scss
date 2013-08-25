@@ -9,6 +9,11 @@
 // Modules can sometimes sit within other Modules, too.
 // Each Module should be designed to exist as a standalone component.
 
-section {
-  border-bottom: 0.1em solid $lighterGrey;
+[role="main"] > section {
+  padding-bottom: 2em;
+  h2 {
+    color: $white;
+    padding: 0.5em;
+    background-color: $mainColor;
+  }
 }

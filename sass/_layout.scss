@@ -1,0 +1,36 @@
+// =====================================
+// LAYOUT RULES
+// =====================================
+
+// CSS, by its very nature, is used to lay elements out on the page.
+// However, there is a distinction between layouts dictating the major and minor components of a page.
+// The minor components such as a callout, or login form, or a navigation item sit within the scope of major components such as a header or footer.
+
+* {
+  @include box-sizing(border-box);
+}
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 40em;
+}
+header[role="banner"] { padding: 2em 0; }
+footer[role="contentinfo"] { padding: 2em; }
+
+
+// Layout Helpers
+// html {
+//   outline: 2px solid $black;
+// }
+// body {
+//   outline: 2px dashed $lightgrey;
+// }
+// article {
+//   outline: 1px dashed red;
+// }
+// div {
+//   outline: 1px dashed black; 
+// }
+// header, footer {
+//   outline: 2px dashed green;
+// }

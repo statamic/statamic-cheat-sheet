@@ -1,0 +1,23 @@
+// =====================================
+// MODULE RULES
+// =====================================
+
+// A Module is a more discrete component of the page.
+// It is your navigation bars and your carousels and your dialogues and your widgets and so on.
+// This is the meat of the page.
+// Modules sit inside Layout components.
+// Modules can sometimes sit within other Modules, too.
+// Each Module should be designed to exist as a standalone component.
+
+.pagination {
+  margin: 1em 0;
+  padding: 1em 0;
+  @include pie-clearfix;
+
+  a.prev {
+    float: left;
+  }
+  a.next {
+    float: right;
+  }
+}

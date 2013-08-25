@@ -1,0 +1,21 @@
+// =====================================
+// BASE RULES
+// =====================================
+
+
+// A Base rule is applied to an element using an element selector, a descendent selector,
+// or a child selector, along with any pseudo-classes.
+// It doesn't include any class or ID selectors.
+// It is defining the default styling for how that element should look in all occurrences on the page.
+
+body {
+  line-height: 1.5;
+  color: $darkgrey;
+}
+small {
+  display: block;
+  text-align: center;
+}
+a {
+  @include link-colors($normal, $hover, $active, $visited, $focus);
+}

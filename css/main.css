@@ -649,7 +649,7 @@ header[role="banner"] {
       color: #fff; }
     /* line 81, ../sass/_modules.scss */
     .blocks > section h3 {
-      font-size: .75em;
+      font-size: .65em;
       text-transform: uppercase;
       color: #899ea3;
       background: #dfe4e6;

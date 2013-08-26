@@ -48,13 +48,12 @@ header[role="banner"] {
 	h1 {
 		display: block;
 		text-align: center;
-		text-transform: uppercase;
 	}
 }
 
 
 .blocks {
-  padding: 1.5em 0 0;
+  padding: .5em 0 0;
 	overflow: visible;
 	@include column-count(7);
 	@include column-gap(1.5em);
@@ -138,7 +137,12 @@ header[role="banner"] {
 
 .blocks-tags { h2 { background-color: $mainColor; } }
 .blocks-fieldtypes { h2 { background-color: $statamicGreen; } }
+.blocks-reference { h2 { background-color: $statamicPlumb; } }
 
+.area {
+	padding: 1em 0;
+	border-bottom: 1px solid darken($statamicTan,10%);
+}
 
 @media only screen and ( max-width: 1900px ) { .blocks { @include column-count(6); } }
 @media only screen and ( max-width: 1600px ) { .blocks { @include column-count(5); } }

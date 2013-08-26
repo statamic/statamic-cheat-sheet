@@ -10,15 +10,88 @@
 // Each Module should be designed to exist as a standalone component.
 
 header[role="banner"] {
-  h1 { margin-bottom: 0; }
-  p { margin-top: 0; }
+	background: $mainColor;
+  h1 {
+    margin-bottom: 0;
+	  color: #fff;
+	  line-height: 1.1;
+	}
+  p {
+  	margin: 0;
+  	color: $statamicTan;
+  	}
 }
-[role="main"] > section {
-  padding-bottom: 2em;
-  h2 {
-    color: $white;
-    padding: 0.5em;
-    letter-spacing: 0.1em;
-    background-color: $mainColor;
-  }
+
+[role="main"] {
+  margin: 0 auto;
+	h1 {
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+	}
 }
+
+.blocks {
+  padding: 0em;
+	overflow: visible;
+	@include column-count(5);
+	@include column-gap(1.5em);
+	> section {
+		@include column-break-inside(avoid);
+		@include box-shadow(3px 3px 0px rgba(#000,0.05));
+		margin-right: 3px;
+		display: block;
+		background: #fff;
+		margin-bottom: 1.5em;
+		h2, h3 {
+			margin: 0;
+			padding: 0 0 0 12px;
+			}
+		h2 {
+			color: $statamicTan;
+			margin: 0;
+			background-color: $mainColor;
+			letter-spacing: 0.1em;
+			line-height: 2.25;
+			font-size: 1em;
+			}
+		a:hover h2 { color: #fff; }
+		h3 {
+			font-size: .75em;
+			text-transform: uppercase;
+			color: lighten($mainColor,30%);
+			background: lighten($mainColor,60%);
+			letter-spacing: 0.25em;
+			line-height: 2;
+			font-weight: bold;
+			}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			}
+		li {
+			padding: 0 0 0 12px;
+			line-height: 2;
+			font-size: .85em;
+			border-bottom: 1px solid $statamicTan;
+			}
+		ul ul {
+			background: darken($statamicTan,5%);
+			padding: 12px;
+			margin-left: -12px;
+			li {
+				display: inline-block;
+				border: none;
+				background: darken($statamicTan,20%);
+				padding-right: 12px;
+				font-size: 13px;
+				margin: 0 2px 2px 0;
+				}
+			}
+		}
+	}
+
+@media only screen and ( max-width: 1300px ) { .blocks { @include column-count(4); } }
+@media only screen and ( max-width: 1000px ) { .blocks { @include column-count(3); } }
+@media only screen and ( max-width: 700px ) { .blocks { @include column-count(2); } }

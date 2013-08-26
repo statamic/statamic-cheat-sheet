@@ -1,5 +1,5 @@
 // ===============================================
-// All variables to be used in your theme go here. 
+// All variables to be used in your theme go here.
 // ===============================================
 
 // ===================
@@ -14,15 +14,16 @@ $grey         :  lighten($black, 50%);
 $lightGrey    :  lighten($black, 75%);
 $lighterGrey  :  lighten($black, 90%);
 $white        :  rgb(255, 255, 255);
+$statamicTan  :  #f5f4ee;
 
 // site colours
 
 $mainColor    :  rgb(53, 65, 68);
 $compColor    :  rgb(250, 82, 42);
-$bodyBg       :  $white;
+$bodyBg       :  #f5f4ee;
 $htmlBg       :  rgb(236, 240, 241);
-$fontColor    :  lighten(rgb(20, 20, 26), 20%);
-$headingColor :  rgb(20, 20, 26);
+$fontColor    :  $mainColor;
+$headingColor :  #222222;
 $borderColor  :  $lightGrey;
 $callColor    :  rgb(39, 174, 96);
 

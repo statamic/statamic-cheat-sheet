@@ -62,7 +62,8 @@ header[role="banner"] {
 		@include column-break-inside(avoid);
 		@include box-shadow(3px 3px 0px rgba(#000,0.05));
 		margin-right: 3px;
-		display: block;
+		display: inline-block;
+		width: 100%;
 		background: #fff;
 		margin-bottom: 1.5em;
 		h2, h3 {

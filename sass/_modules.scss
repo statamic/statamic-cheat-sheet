@@ -31,6 +31,8 @@ header[role="banner"] {
 	}
 }
 
+a.open-block { display: block; }
+
 .blocks {
   padding: 0em;
 	overflow: visible;
@@ -54,14 +56,15 @@ header[role="banner"] {
 			letter-spacing: 0.1em;
 			line-height: 2.25;
 			font-size: 1em;
+			text-shadow: 0 -1px 0 #000;
 			}
 		a:hover h2 { color: #fff; }
 		h3 {
 			font-size: .75em;
 			text-transform: uppercase;
-			color: lighten($mainColor,30%);
-			background: lighten($mainColor,60%);
-			letter-spacing: 0.25em;
+			color: lighten($mainColor,35%);
+			background: lighten($mainColor,65%);
+			letter-spacing: 0.2em;
 			line-height: 2;
 			font-weight: bold;
 			}
@@ -69,6 +72,7 @@ header[role="banner"] {
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			border-top: 1px solid $statamicTan;
 			}
 		li {
 			padding: 0 0 0 12px;

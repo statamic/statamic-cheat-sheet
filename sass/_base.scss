@@ -67,18 +67,24 @@ dd { margin-bottom: 1em; }
 table {
   width: 100%;
   color: $tableFontColor;
-  background-color: $tableBg;
-  border: 0.1em solid $tableBorderColor;
 
   caption { font-weight: bold; }
   thead {
     text-align: left;
-    text-align: center;
-    background-color: darken($tableBg, 15%);
+    background-color: $tableBg;
 
-    th { border-color: $tableBorderColor; }
+    th {
+      color: $darkGrey;
+      border-bottom: 1px solid $lightGrey;
+    }
   }
-  th,td { padding: 0.5em; border: 0.1em solid $tableBorderColor; }
+  th, td {
+    padding: 0 0 0 12px;
+    line-height: 2;
+    font-size: .85em;
+    border-bottom: 1px solid $statamicTan;
+    position: relative;
+  }
   td { text-align: left; }
 
   th[scope="row"] { font-weight: normal; }

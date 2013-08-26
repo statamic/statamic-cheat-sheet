@@ -561,27 +561,27 @@ header[role="banner"] {
     margin-bottom: 0;
     color: #fff;
     line-height: 1.1; }
-  /* line 19, ../sass/_modules.scss */
+    /* line 18, ../sass/_modules.scss */
+    header[role="banner"] h1 small {
+      display: inline;
+      font-size: 50%; }
+  /* line 23, ../sass/_modules.scss */
   header[role="banner"] p {
     margin: 0;
     color: #f5f4ee; }
 
-/* line 25, ../sass/_modules.scss */
+/* line 29, ../sass/_modules.scss */
 [role="main"] {
   margin: 0 auto; }
-  /* line 27, ../sass/_modules.scss */
+  /* line 31, ../sass/_modules.scss */
   [role="main"] h1 {
     display: block;
     text-align: center;
     text-transform: uppercase; }
 
-/* line 34, ../sass/_modules.scss */
-a.open-block {
-  display: block; }
-
-/* line 36, ../sass/_modules.scss */
+/* line 39, ../sass/_modules.scss */
 .blocks {
-  padding: 0em;
+  padding: 1.5em 0 0;
   overflow: visible;
   -webkit-column-count: 5;
   -moz-column-count: 5;
@@ -593,7 +593,7 @@ a.open-block {
   -ms-column-gap: 1.5em;
   -o-column-gap: 1.5em;
   column-gap: 1.5em; }
-  /* line 41, ../sass/_modules.scss */
+  /* line 44, ../sass/_modules.scss */
   .blocks > section {
     -webkit-column-break-inside: avoid;
     column-break-inside: avoid;
@@ -604,11 +604,11 @@ a.open-block {
     display: block;
     background: #fff;
     margin-bottom: 1.5em; }
-    /* line 48, ../sass/_modules.scss */
+    /* line 51, ../sass/_modules.scss */
     .blocks > section h2, .blocks > section h3 {
       margin: 0;
       padding: 0 0 0 12px; }
-    /* line 52, ../sass/_modules.scss */
+    /* line 55, ../sass/_modules.scss */
     .blocks > section h2 {
       color: #f5f4ee;
       margin: 0;
@@ -617,10 +617,10 @@ a.open-block {
       line-height: 2.25;
       font-size: 1em;
       text-shadow: 0 -1px 0 black; }
-    /* line 61, ../sass/_modules.scss */
+    /* line 64, ../sass/_modules.scss */
     .blocks > section a:hover h2 {
       color: #fff; }
-    /* line 62, ../sass/_modules.scss */
+    /* line 65, ../sass/_modules.scss */
     .blocks > section h3 {
       font-size: .75em;
       text-transform: uppercase;
@@ -629,34 +629,56 @@ a.open-block {
       letter-spacing: 0.2em;
       line-height: 2;
       font-weight: bold; }
-    /* line 71, ../sass/_modules.scss */
+    /* line 74, ../sass/_modules.scss */
     .blocks > section ul {
       list-style: none;
       margin: 0;
       padding: 0;
       border-top: 1px solid #f5f4ee; }
-    /* line 77, ../sass/_modules.scss */
+    /* line 80, ../sass/_modules.scss */
     .blocks > section li {
       padding: 0 0 0 12px;
       line-height: 2;
       font-size: .85em;
-      border-bottom: 1px solid #f5f4ee; }
-    /* line 83, ../sass/_modules.scss */
+      border-bottom: 1px solid #f5f4ee;
+      position: relative; }
+    /* line 87, ../sass/_modules.scss */
+    .blocks > section a.trigger {
+      float: right;
+      display: block;
+      padding: 0 0.5em;
+      background: #dfe4e6;
+      color: #fff;
+      background: #354144; }
+    /* line 95, ../sass/_modules.scss */
     .blocks > section ul ul {
-      background: #eceade;
+      display: block;
+      background: #354144;
       padding: 12px;
-      margin-left: -12px; }
-      /* line 87, ../sass/_modules.scss */
+      margin-left: -12px;
+      position: absolute;
+      top: 2em;
+      z-index: 1;
+      width: 100%;
+      border-top: 0px; }
+      /* line 105, ../sass/_modules.scss */
       .blocks > section ul ul li {
         display: inline-block;
         border: none;
-        background: #cfcaae;
+        background: #1f2627;
         padding-right: 12px;
         font-size: 13px;
-        margin: 0 2px 2px 0; }
+        margin: 0 2px 2px 0;
+        color: #fff; }
+    /* line 116, ../sass/_modules.scss */
+    .blocks > section li.close-block a.trigger {
+      background: #dfe4e6; }
+    /* line 117, ../sass/_modules.scss */
+    .blocks > section li.close-block ul {
+      display: none; }
 
 @media only screen and (max-width: 1300px) {
-  /* line 99, ../sass/_modules.scss */
+  /* line 122, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -664,7 +686,7 @@ a.open-block {
     -o-column-count: 4;
     column-count: 4; } }
 @media only screen and (max-width: 1000px) {
-  /* line 100, ../sass/_modules.scss */
+  /* line 123, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -672,7 +694,7 @@ a.open-block {
     -o-column-count: 3;
     column-count: 3; } }
 @media only screen and (max-width: 700px) {
-  /* line 101, ../sass/_modules.scss */
+  /* line 124, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 2;
     -moz-column-count: 2;

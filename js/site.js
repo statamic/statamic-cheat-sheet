@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	$('section ul ul').each(function() {
-		$(this).hide();
-		$(this).parent().wrapInner("<a href='#' class='open-block' />");
+		$(this).parent().addClass('close-block');
+		$(this).before("<a href='#' class='trigger'>&darr;</a>");
 	});
-	$('a.open-block').click(function(event) {
+	$('a.trigger').click(function(event) {
 		event.preventDefault();
-		$(this).children().toggle();
+		$(this).parent().toggleClass('close-block');
 	});
 });

@@ -497,46 +497,47 @@ dd {
 /* line 67, ../sass/_base.scss */
 table {
   width: 100%;
-  color: #807f79;
-  background-color: white;
-  border: 0.1em solid gray; }
-  /* line 73, ../sass/_base.scss */
+  color: #807f79; }
+  /* line 71, ../sass/_base.scss */
   table caption {
     font-weight: bold; }
-  /* line 74, ../sass/_base.scss */
+  /* line 72, ../sass/_base.scss */
   table thead {
     text-align: left;
-    text-align: center;
-    background-color: #d9d9d9; }
-    /* line 79, ../sass/_base.scss */
+    background-color: white; }
+    /* line 76, ../sass/_base.scss */
     table thead th {
-      border-color: gray; }
+      color: #404040;
+      border-bottom: 1px solid #bfbfbf; }
   /* line 81, ../sass/_base.scss */
   table th, table td {
-    padding: 0.5em;
-    border: 0.1em solid gray; }
-  /* line 82, ../sass/_base.scss */
+    padding: 0 0 0 12px;
+    line-height: 2;
+    font-size: .85em;
+    border-bottom: 1px solid #f5f4ee;
+    position: relative; }
+  /* line 88, ../sass/_base.scss */
   table td {
     text-align: left; }
-  /* line 84, ../sass/_base.scss */
+  /* line 90, ../sass/_base.scss */
   table th[scope="row"] {
     font-weight: normal; }
-  /* line 85, ../sass/_base.scss */
+  /* line 91, ../sass/_base.scss */
   table th[scope="rowgroup"] {
     vertical-align: middle; }
-  /* line 87, ../sass/_base.scss */
+  /* line 93, ../sass/_base.scss */
   table th[scope="row"],
   table th[scope="rowgroup"] {
     text-align: left; }
-  /* line 89, ../sass/_base.scss */
+  /* line 95, ../sass/_base.scss */
   table tbody tr:nth-of-type(even) {
     background-color: #f7f7f7; }
-  /* line 92, ../sass/_base.scss */
+  /* line 98, ../sass/_base.scss */
   table tfoot {
     font-size: 75%;
     color: #807f79;
     background-color: #d9d9d9; }
-    /* line 97, ../sass/_base.scss */
+    /* line 103, ../sass/_base.scss */
     table tfoot td {
       text-align: center; }
 

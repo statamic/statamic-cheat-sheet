@@ -13,9 +13,8 @@
   padding: 0 1.5em;
 }
 header[role="banner"] {
-  padding: 1em 0;
   background-color: $headerBg;
-  border-bottom: 0.1em solid darken($headerBg, 5%);
+  border-bottom: 1px solid #fff;
 }
 footer[role="contentinfo"] {
   padding: 1em;

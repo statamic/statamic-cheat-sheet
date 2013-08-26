@@ -11,10 +11,15 @@
 
 header[role="banner"] {
 	background: $mainColor;
+	margin: 0;
+	padding: 0;
+	@include clearfix;
   h1 {
     margin-bottom: 0;
 	  color: #fff;
-	  line-height: 1.1;
+	  line-height: 80px;
+	  height: 80px;
+	  float: left;
 	  small {
 		  display: inline;
 		  font-size: 50%;
@@ -24,6 +29,18 @@ header[role="banner"] {
   	margin: 0;
   	color: $statamicTan;
   	}
+  nav {
+  	float: right;
+	  a {
+	  	float: left;
+		  display: block;
+		  line-height: 80px;
+		  color: #fff;
+		  padding: 0 1.5em;
+		  &[title="tags"]:hover { background: lighten($mainColor,10%); }
+		  &[title="fieldtypes"]:hover { background: lighten($statamicGreen,10%); }
+	  }
+  }
 }
 
 [role="main"] {
@@ -55,7 +72,6 @@ header[role="banner"] {
 		h2 {
 			color: $statamicTan;
 			margin: 0;
-			background-color: $mainColor;
 			letter-spacing: 0.1em;
 			line-height: 2.25;
 			font-size: 1em;
@@ -118,6 +134,11 @@ header[role="banner"] {
 			}
 		}
 	}
+
+.blocks-tags { h2 { background-color: $mainColor; } }
+.blocks-fieldtypes { h2 { background-color: $statamicGreen; } }
+
+
 @media only screen and ( max-width: 1900px ) { .blocks { @include column-count(6); } }
 @media only screen and ( max-width: 1600px ) { .blocks { @include column-count(5); } }
 @media only screen and ( max-width: 1300px ) { .blocks { @include column-count(4); } }

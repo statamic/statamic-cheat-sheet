@@ -10,14 +10,11 @@
   @include box-sizing(border-box);
 }
 .container {
-  margin: 0 auto;
-  padding: 0 1em;
-  max-width: 90%;
+  padding: 0 1.5em;
 }
 header[role="banner"] {
-  padding: 0.5em 0;
   background-color: $headerBg;
-  border-bottom: 0.1em solid darken($headerBg, 5%);
+  border-bottom: 1px solid #fff;
 }
 footer[role="contentinfo"] {
   padding: 1em;

@@ -433,6 +433,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -442,20 +443,21 @@
             <section>
               <h3>Options</h3>
               <ul>
-                <li>select_on_page</li>
-                <li>starting_color</li>
-                <li>show_input</li>
-                <li>show_initial</li>
-                <li>show_alpha</li>
-                <li>choose_text</li>
                 <li>cancel_text</li>
+                <li>choose_text</li>
+                <li>instructions</li>
+                <li>local_storage_key</li>
+                <li>max_selection_size</li>
+                <li>palette</li>
                 <li>preferred_format</li>
+                <li>select_on_page</li>
+                <li>show_alpha</li>
                 <li>show_palette</li>
                 <li>show_palette_only</li>
-                <li>palette</li>
+                <li>show_initial</li>
+                <li>show_input</li>
                 <li>show_selection_palette</li>
-                <li>max_selection_size</li>
-                <li>local_storage_key</li>
+                <li>starting_color</li>
               </ul>
             </section>
           </section>
@@ -466,6 +468,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -475,9 +478,10 @@
             <section>
               <h3>Options</h3>
               <ul>
-                <li>display</li>
                 <li>allowed</li>
                 <li>destination</li>
+                <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -488,14 +492,15 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
-                <li>starting_rows</li>
-                <li>min_rows</li>
-                <li>max_rows</li>
                 <li>fields
                   <ul>
                     <li>width</li>
                   </ul>
-                </li>          
+                </li>
+                <li>instructions</li>
+                <li>min_rows</li>
+                <li>max_rows</li>
+                <li>starting_rows</li>
               </ul>
             </section>
           </section>
@@ -509,18 +514,16 @@
             <section>
               <h3>Options</h3>
               <ul>
-                <li>starting_latitude</li>
-                <li>starting_logitude</li>
-                <li>starting_zoom</li>
-                <li>min_zoom</li>
-                <li>max_zoom</li>
-                <li>float_precision</li>
                 <li>allow_geolocation</li>
-                <li>geolocation_zoom</li>
-                <li>use_foursquare</li>
+                <li>cloudmade_api_key</li>
+                <li>cloudmade_tile_set_id</li>
+                <li>detect_retina</li>
+                <li>float_precision</li>
                 <li>foursquare_client_id</li>
                 <li>foursquare_client_secret</li>
                 <li>foursquare_radius</li>
+                <li>geolocation_zoom</li>
+                <li>instructions</li>
                 <li>interaction
                     <ul>
                       <li>scroll_wheel_zoom</li>
@@ -528,11 +531,14 @@
                       <li>box_zoom</li>
                       <li>touch_zoom</li>
                       <li>draggable</li>
-                    </ul>  
+                    </ul>
                 </li>
-                <li>cloudmade_api_key</li>
-                <li>cloudmade_tile_set_id</li>
-                <li>detect_retina</li>
+                <li>max_zoom</li>
+                <li>min_zoom</li>
+                <li>starting_latitude</li>
+                <li>starting_logitude</li>
+                <li>starting_zoom</li>
+                <li>use_foursquare</li>
               </ul>
             </section>
           </section>
@@ -558,8 +564,8 @@
                 <li>display</li>
                 <li>default</li>
                 <li>height</li>
-                <li>options</li>
                 <li>instructions</li>
+                <li>options</li>
               </ul>
             </section>
           </section>
@@ -571,6 +577,7 @@
               <ul>
                 <li>display</li>
                 <li>image_dir</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -593,6 +600,7 @@
               <ul>
                 <li>display</li>
                 <li>options</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -603,25 +611,36 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
-                <li>placeholder</li>
-                <li>multiple</li>
-                <li>content
+                <li>
+                  content
                   <ul>
+                    <li>conditions</li>
                     <li>folder</li>
+                    <li>hide_selected</li>
                     <li>label</li>
+                    <li>show_draft</li>
+                    <li>show_hidden</li>
+                    <li>show_future</li>
+                    <li>show_past</li>
+                    <li>since</li>
+                    <li>type</li>
+                    <li>sort_dir</li>
+                    <li>until</li>
                     <li>value</li>
                   </ul>
                 </li>
-              </ul>
-            </section>
-          </section>
-
-          <section>
-            <h2>select</h2>
-            <section>
-              <h3>Options</h3>
-              <ul>
-                <li>display</li>
+                <li>create</li>
+                <li>instructions</li>
+                <li>max_items</li>
+                <li>persist</li>
+                <li>placeholder</li>
+                <li>
+                  taxonomy
+                  <ul>
+                    <li>folder</li>
+                    <li>type</li>
+                  </ul>
+                </li>
               </ul>
             </section>
           </section>
@@ -658,7 +677,7 @@
                 <li>code_formatting
                   <ul>
                     <li>true</li>
-                    <li>false (default)</li>
+                    <li>false <small>(default)</small></li>
                   </ul>
                 </li>
                 <li>display</li>
@@ -674,6 +693,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -684,6 +704,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>

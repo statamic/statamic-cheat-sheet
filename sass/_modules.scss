@@ -10,142 +10,168 @@
 // Each Module should be designed to exist as a standalone component.
 
 header[role="banner"] {
-	background: $mainColor;
-	margin: 0;
-	padding: 0;
-	@include clearfix;
+  background: $mainColor;
+  margin: 0;
+  padding: 0;
+  @include clearfix;
   h1 {
     margin-bottom: 0;
-	  color: #fff;
-	  line-height: 80px;
-	  height: 80px;
-	  float: left;
-	  small {
-		  display: inline;
-		  font-size: 50%;
-	  }
-	}
+    color: #fff;
+    line-height: 60px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    small {
+      display: none;
+      font-size: 50%;
+    }
+  }
   p {
-  	margin: 0;
-  	color: $statamicTan;
-  	}
+    margin: 0;
+    color: $statamicTan;
+    }
   nav {
-  	float: right;
-	  a {
-	  	float: left;
-		  display: block;
-		  line-height: 80px;
-		  color: #fff;
-		  padding: 0 1.5em;
-		  &[title="tags"]:hover { background: lighten($mainColor,10%); }
-		  &[title="fieldtypes"]:hover { background: lighten($statamicGreen,10%); }
-	  }
+    float: right;
+    width: 100%;
+    text-align: center;
+    display: block;
+    a {
+      line-height: 40px;
+      color: #fff;
+      padding: 0 1.5em;
+      display: inline-block;
+      &.active, &[title="tags"]:hover { background: lighten($mainColor,10%); }
+      &.active, &[title="fieldtypes"]:hover { background: lighten($statamicGreen,10%); }
+      &.active, &[title="reference"]:hover { background: lighten($statamicPlumb,10%); }
+    }
   }
 }
 
 [role="main"] {
   margin: 0 auto;
-	h1 {
-		display: block;
-		text-align: center;
-	}
+  h1 {
+    display: block;
+    text-align: center;
+  }
 }
 
 
 .blocks {
   padding: .5em 0 0;
-	overflow: visible;
-	@include column-count(7);
-	@include column-gap(1.5em);
-	> section {
-		@include column-break-inside(avoid);
-		@include box-shadow(3px 3px 0px rgba(#000,0.05));
-		margin-right: 3px;
-		display: inline-block;
-		width: 100%;
-		background: #fff;
-		margin-bottom: 1.5em;
-		h2, h3 {
-			margin: 0;
-			padding: 0 0 0 12px;
-			}
-		h2 {
-			color: $statamicTan;
-			margin: 0;
-			letter-spacing: 0.1em;
-			line-height: 2.25;
-			font-size: 1em;
-			text-shadow: 0 -1px 0 #000;
-			}
-		a:hover h2 { color: #fff; }
-		h3 {
-			font-size: .65em;
-			text-transform: uppercase;
-			color: lighten($mainColor,35%);
-			background: lighten($mainColor,65%);
-			letter-spacing: 0.2em;
-			line-height: 2;
-			font-weight: bold;
-			}
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			border-top: 1px solid $statamicTan;
-			}
-		li {
-			padding: 0 0 0 12px;
-			line-height: 2;
-			font-size: .85em;
-			border-bottom: 1px solid $statamicTan;
-			position: relative;
-			}
-		a.trigger {
-		  float: right;
-		  display: block;
-		  padding: 0 .5em;
-		  background: lighten($mainColor,65%);
-		  color: #fff;
-		  background: $mainColor;
-		  }
-		ul ul {
-			display: block;
-			background: $mainColor;
-			padding: 12px;
-			margin-left: -12px;
-			position: absolute;
-			top: 2em;
-			z-index: 1;
-			width: 100%;
-			border-top: 0px;
-			li {
-				display: inline-block;
-				border: none;
-				background: darken($mainColor,10%);
-				padding-right: 12px;
-				font-size: 13px;
-				margin: 0 2px 2px 0;
-				color: #fff;
-				}
-			}
-		li.close-block {
-			a.trigger { background: lighten($mainColor,65%); }
-			ul { display: none; }
-			}
-		}
-	}
+  overflow: visible;
+  @include column-count(1);
+  @include column-gap(1.5em);
+  > section {
+    @include column-break-inside(avoid);
+    @include box-shadow(3px 3px 0px rgba(#000,0.05));
+    margin-right: 3px;
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 1.5em;
+    h2, h3 {
+      margin: 0;
+      padding: 0 0 0 12px;
+      }
+    h2 {
+      color: $statamicTan;
+      margin: 0;
+      letter-spacing: 0.1em;
+      line-height: 2.25;
+      font-size: 1em;
+      text-shadow: 0 -1px 0 #000;
+      }
+    a:hover h2 { color: #fff; }
+    h3 {
+      font-size: .65em;
+      text-transform: uppercase;
+      color: lighten($mainColor,35%);
+      background: lighten($mainColor,65%);
+      letter-spacing: 0.2em;
+      line-height: 2;
+      font-weight: bold;
+      }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid $statamicTan;
+      }
+    li {
+      padding: 0 0 0 12px;
+      line-height: 2;
+      font-size: .85em;
+      border-bottom: 1px solid $statamicTan;
+      position: relative;
+      }
+    a.trigger {
+      float: right;
+      display: block;
+      padding: 0 .5em;
+      background: lighten($mainColor,65%);
+      color: #fff;
+      background: $mainColor;
+      }
+    ul ul {
+      display: block;
+      background: $mainColor;
+      padding: 12px;
+      margin-left: -12px;
+      position: absolute;
+      top: 2em;
+      z-index: 1;
+      width: 100%;
+      border-top: 0px;
+      li {
+        display: inline-block;
+        border: none;
+        background: darken($mainColor,10%);
+        padding-right: 12px;
+        font-size: 13px;
+        margin: 0 2px 2px 0;
+        color: #fff;
+        }
+      }
+    li.close-block {
+      a.trigger { background: lighten($mainColor,65%); }
+      ul { display: none; }
+      }
+    }
+  }
 
 .blocks-tags { h2 { background-color: $mainColor; } }
 .blocks-fieldtypes { h2 { background-color: $statamicGreen; } }
 .blocks-reference { h2 { background-color: $statamicPlumb; } }
 
 .area {
-	padding: 1em 0;
-	border-bottom: 1px solid darken($statamicTan,10%);
+  padding: 1em 0;
+  border-bottom: 1px solid darken($statamicTan,10%);
 }
+@media only screen and ( min-width: 600px ) {
+	.blocks { @include column-count(2); }
+	}
+@media only screen and ( min-width: 900px ) {
+	header[role="banner"] {
+		h1 {
+		  text-align: left;
+		  width: auto;
+		  line-height: 80px;
+		  height: 80px;
+		  small { display: inline; }
+		  }
+    nav {
+      float: right;
+      width: auto;
+      a {
+        float: left;
+        line-height: 80px;
+      }
+    }
+	}
 
-@media only screen and ( max-width: 1900px ) { .blocks { @include column-count(6); } }
-@media only screen and ( max-width: 1600px ) { .blocks { @include column-count(5); } }
-@media only screen and ( max-width: 1300px ) { .blocks { @include column-count(4); } }
-@media only screen and ( max-width: 1000px ) { .blocks { @include column-count(3); } }
-@media only screen and ( max-width: 700px ) { .blocks { @include column-count(2); } }
+	.blocks { @include column-count(3); }
+	}
+@media only screen and ( min-width: 1200px ) { .blocks { @include column-count(4); } }
+@media only screen and ( min-width: 1500px ) { .blocks { @include column-count(5); } }
+@media only screen and ( min-width: 1800px ) { .blocks { @include column-count(6); } }

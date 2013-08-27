@@ -224,7 +224,7 @@ figure {
  */
 /* line 253, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -433,16 +433,16 @@ a {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
   color: #fa522a; }
-  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #fa522a; }
-  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
     color: #d32c05; }
-  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #d32c05; }
-  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: #d32c05; }
 
@@ -494,50 +494,60 @@ dt {
 dd {
   margin-bottom: 1em; }
 
-/* line 67, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
+pre {
+  background: #f7f7f7;
+  border-radius: 2px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: .75em; }
+
+/* line 76, ../sass/_base.scss */
 table {
   width: 100%;
   color: #807f79; }
-  /* line 71, ../sass/_base.scss */
+  /* line 80, ../sass/_base.scss */
   table caption {
     font-weight: bold; }
-  /* line 72, ../sass/_base.scss */
+  /* line 81, ../sass/_base.scss */
   table thead {
     text-align: left;
     background-color: white; }
-    /* line 76, ../sass/_base.scss */
+    /* line 85, ../sass/_base.scss */
     table thead th {
       color: #404040;
       border-bottom: 1px solid #bfbfbf; }
-  /* line 81, ../sass/_base.scss */
+  /* line 90, ../sass/_base.scss */
   table th, table td {
     padding: 0 0 0 12px;
     line-height: 2;
     font-size: .85em;
     border-bottom: 1px solid #f5f4ee;
     position: relative; }
-  /* line 88, ../sass/_base.scss */
+  /* line 97, ../sass/_base.scss */
   table td {
     text-align: left; }
-  /* line 90, ../sass/_base.scss */
+  /* line 99, ../sass/_base.scss */
   table th[scope="row"] {
     font-weight: normal; }
-  /* line 91, ../sass/_base.scss */
+  /* line 100, ../sass/_base.scss */
   table th[scope="rowgroup"] {
     vertical-align: middle; }
-  /* line 93, ../sass/_base.scss */
+  /* line 102, ../sass/_base.scss */
   table th[scope="row"],
   table th[scope="rowgroup"] {
+    color: #404040;
     text-align: left; }
-  /* line 95, ../sass/_base.scss */
+  /* line 104, ../sass/_base.scss */
   table tbody tr:nth-of-type(even) {
     background-color: #f7f7f7; }
-  /* line 98, ../sass/_base.scss */
+  /* line 107, ../sass/_base.scss */
   table tfoot {
     font-size: 75%;
     color: #807f79;
     background-color: #d9d9d9; }
-    /* line 103, ../sass/_base.scss */
+    /* line 112, ../sass/_base.scss */
     table tfoot td {
       text-align: center; }
 
@@ -553,9 +563,10 @@ table {
 
 /* line 15, ../sass/_layout.scss */
 header[role="banner"] {
-  background-color: #f5f4ee; }
+  background-color: #f5f4ee;
+  border-bottom: 1px solid #fff; }
 
-/* line 18, ../sass/_layout.scss */
+/* line 19, ../sass/_layout.scss */
 footer[role="contentinfo"] {
   padding: 1em;
   background-color: #f5f4ee;
@@ -623,7 +634,7 @@ header[role="banner"] {
 
 /* line 64, ../sass/_modules.scss */
 .blocks {
-  padding: 0.5em 0 0;
+  padding: .5em 0 0;
   overflow: visible;
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -644,7 +655,7 @@ header[role="banner"] {
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
     margin-right: 3px;
     display: inline-block;
-    width: 100%;
+    width: 95%;
     background: #fff;
     margin-bottom: 1.5em; }
     /* line 77, ../sass/_modules.scss */
@@ -658,7 +669,7 @@ header[role="banner"] {
       letter-spacing: 0.1em;
       line-height: 2.25;
       font-size: 1em;
-      text-shadow: 0 -1px 0 black; }
+      text-shadow: 0 -1px 0 #000; }
     /* line 89, ../sass/_modules.scss */
     .blocks > section a:hover h2 {
       color: #fff; }
@@ -688,7 +699,7 @@ header[role="banner"] {
     .blocks > section a.trigger {
       float: right;
       display: block;
-      padding: 0 0.5em;
+      padding: 0 .5em;
       background: #dfe4e6;
       color: #fff;
       background: #354144; }
@@ -827,3 +838,43 @@ header[role="banner"] {
   /* line 11, ../sass/_states.scss */
   body {
     font-size: 100%; } }
+@media only screen and (max-width: 1900px) {
+  /* line 16, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    -ms-column-count: 6;
+    -o-column-count: 6;
+    column-count: 6; } }
+@media only screen and (max-width: 1600px) {
+  /* line 17, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    -ms-column-count: 5;
+    -o-column-count: 5;
+    column-count: 5; } }
+@media only screen and (max-width: 1300px) {
+  /* line 18, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -ms-column-count: 4;
+    -o-column-count: 4;
+    column-count: 4; } }
+@media only screen and (max-width: 1000px) {
+  /* line 19, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3; } }
+@media only screen and (max-width: 700px) {
+  /* line 20, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2; } }

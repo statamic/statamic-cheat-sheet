@@ -12,3 +12,9 @@
     font-size: 100%;
   }
 }
+// CSS COLUMN BREAKPOINTS
+@media only screen and ( max-width: 1900px ) { .blocks { @include column-count(6); } }
+@media only screen and ( max-width: 1600px ) { .blocks { @include column-count(5); } }
+@media only screen and ( max-width: 1300px ) { .blocks { @include column-count(4); } }
+@media only screen and ( max-width: 1000px ) { .blocks { @include column-count(3); } }
+@media only screen and ( max-width: 700px ) { .blocks { @include column-count(2); } }

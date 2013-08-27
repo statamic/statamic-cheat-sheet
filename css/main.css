@@ -224,7 +224,7 @@ figure {
  */
 /* line 253, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -433,16 +433,16 @@ a {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
   color: #fa522a; }
-  /* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #fa522a; }
-  /* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
     color: #d32c05; }
-  /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #d32c05; }
-  /* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: #d32c05; }
 
@@ -563,10 +563,9 @@ table {
 
 /* line 15, ../sass/_layout.scss */
 header[role="banner"] {
-  background-color: #f5f4ee;
-  border-bottom: 1px solid #fff; }
+  background-color: #f5f4ee; }
 
-/* line 19, ../sass/_layout.scss */
+/* line 18, ../sass/_layout.scss */
 footer[role="contentinfo"] {
   padding: 1em;
   background-color: #f5f4ee;
@@ -634,7 +633,7 @@ header[role="banner"] {
 
 /* line 64, ../sass/_modules.scss */
 .blocks {
-  padding: .5em 0 0;
+  padding: 0.5em 0 0;
   overflow: visible;
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -669,7 +668,7 @@ header[role="banner"] {
       letter-spacing: 0.1em;
       line-height: 2.25;
       font-size: 1em;
-      text-shadow: 0 -1px 0 #000; }
+      text-shadow: 0 -1px 0 black; }
     /* line 89, ../sass/_modules.scss */
     .blocks > section a:hover h2 {
       color: #fff; }
@@ -699,7 +698,7 @@ header[role="banner"] {
     .blocks > section a.trigger {
       float: right;
       display: block;
-      padding: 0 .5em;
+      padding: 0 0.5em;
       background: #dfe4e6;
       color: #fff;
       background: #354144; }

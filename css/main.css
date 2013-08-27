@@ -655,7 +655,7 @@ header[role="banner"] {
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
     margin-right: 3px;
     display: inline-block;
-    width: 100%;
+    width: 95%;
     background: #fff;
     margin-bottom: 1.5em; }
     /* line 77, ../sass/_modules.scss */

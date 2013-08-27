@@ -27,6 +27,7 @@
 
 <!-- fonts -->
 <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -43,476 +44,732 @@
     </header>
 
     <div role="main" class="container">
-      <div class="blocks blocks-tags" id="tags">
-        <section>
-          <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:listing }}">
-            <h2>{{ entries:listing }}</h2>
-          </a>
+      <div class="area">
+        <h1>Tags</h1>
+        <div class="blocks blocks-tags" id="tags">
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>folder</li>
-              <li>taxonomy</li>
-              <li>show_hidden</li>
-              <li>since</li>
-              <li>until</li>
-              <li>show_past</li>
-              <li>show_future</li>
-              <li>conditions</li>
-              <li>sort_by</li>
-              <li>sort_dir</li>
-              <li>limit</li>
-              <li>offset</li>
-              <li>paginate</li>
-              <li>group_by_date</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ entries:pagination }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>folder</li>
-              <li>taxonomy</li>
-              <li>show_hidden</li>
-              <li>since</li>
-              <li>until</li>
-              <li>show_past</li>
-              <li>show_future</li>
-              <li>conditions</li>
-              <li>sort_by</li>
-              <li>sort_dir</li>
-              <li>limit</li>
-              <li>offset</li>
-              <li>paginate</li>
-              <li>group_by_date</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ entries:map }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>center_point</li>
-              <li>locate_with</li>
-              <li>zoom</li>
-              <li>map_id</li>
-              <li>clusters</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ get:[variable] }}</h2>
-        </section>
-
-        <section>
-          <h2>{{ get_content }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>from</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ get_files }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>match</li>
-              <li>extension</li>
-              <li>in</li>
-              <li>not_in</li>
-              <li>file_size</li>
-              <li>file_date</li>
-              <li>depth</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ get:post[variable] }}</h2>
-        </section>
-
-        <section>
-          <h2>{{ member:login }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>return</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ member:logout }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>return</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ member:profile }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>member</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ member:listing }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>role</li>
-              <li>limit</li>
-              <li>offset</li>
-              <li>sort_by</li>
-              <li>sort_dir</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>{{ nav }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>from</li>
-              <li>exclude</li>
-              <li>max_depth</li>
-              <li>include_entries</li>
-              <li>folders_only</li>
-              <li>include_content</li>
-            </ul>
+            <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:listing }}">
+              <h2>{{ entries:listing }}</h2>
+            </a>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>folder</li>
+                <li>taxonomy</li>
+                <li>show_hidden</li>
+                <li>since</li>
+                <li>until</li>
+                <li>show_past</li>
+                <li>show_future</li>
+                <li>conditions</li>
+                <li>sort_by</li>
+                <li>sort_dir</li>
+                <li>limit</li>
+                <li>offset</li>
+                <li>paginate</li>
+                <li>group_by_date</li>
+              </ul>
+            </section>
           </section>
 
           <section>
-            <h3>Variables</h3>
-            <ul>
-              <li>is_current</li>
-              <li>is_parent</li>
-              <li>url</li>
-              <li>title</li>
-              <li>children</li>
-            </ul>
+            <h2>{{ entries:pagination }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>folder</li>
+                <li>taxonomy</li>
+                <li>show_hidden</li>
+                <li>since</li>
+                <li>until</li>
+                <li>show_past</li>
+                <li>show_future</li>
+                <li>conditions</li>
+                <li>sort_by</li>
+                <li>sort_dir</li>
+                <li>limit</li>
+                <li>offset</li>
+                <li>paginate</li>
+                <li>group_by_date</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ nav:count }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>from</li>
-              <li>max_depth</li>
-            </ul>
+            <h2>{{ entries:map }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>center_point</li>
+                <li>locate_with</li>
+                <li>zoom</li>
+                <li>map_id</li>
+                <li>clusters</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ nav:breadcrumbs }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>url</li>
-              <li>include_home</li>
-              <li>reverse</li>
-              <li>backspace</li>
-            </ul>
+            <h2>{{ get:[variable] }}</h2>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ obfuscate }}</h2>
-        </section>
+          <section>
+            <h2>{{ get_content }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>from</li>
+              </ul>
+            </section>
+          </section>
 
-        <section>
-          <h2>{{ pages:listing }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>folder</li>
-              <li>taxonomy</li>
-              <li>show_hidden</li>
-              <li>conditions</li>
-              <li>sort_by</li>
-              <li>sort_dir</li>
-              <li>limit</li>
-              <li>offset</li>
-            </ul>
+            <h2>{{ get_files }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>match</li>
+                <li>extension</li>
+                <li>in</li>
+                <li>not_in</li>
+                <li>file_size</li>
+                <li>file_date</li>
+                <li>depth</li>
+              </ul>
+            </section>
           </section>
-          <section>
-            <h3>Available Tags</h3>
-            <ul>
-              <li>first</li>
-              <li>last</li>
-              <li>index</li>
-              <li>zero_index</li>
-              <li>total_results</li>
-            </ul>
-          </section>
-        </section>
 
-        <section>
-          <h2>{{ path }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-            </ul>
+            <h2>{{ get:post[variable] }}</h2>
           </section>
-        </section>
 
-        <section>
-          <h2>post:[variable]</h2>
-        </section>
+          <section>
+            <h2>{{ member:login }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>return</li>
+              </ul>
+            </section>
+          </section>
 
-        <section>
-          <h2>{{ redirect }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>url</li>
-            </ul>
+            <h2>{{ member:logout }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>return</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ switch }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>between</li>
-            </ul>
+            <h2>{{ member:profile }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>member</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ taxonomy:listing }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>type</li>
-              <li>folder</li>
-              <li>min_count</li>
-              <li>sort_by</li>
-              <li>sort_dir</li>
-              <li>limit</li>
-            </ul>
+            <h2>{{ member:listing }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>role</li>
+                <li>limit</li>
+                <li>offset</li>
+                <li>sort_by</li>
+                <li>sort_dir</li>
+              </ul>
+            </section>
           </section>
-          <section>
-            <h3>Available Tags</h3>
-            <ul>
-              <li>name</li>
-              <li>url</li>
-              <li>slug</li>
-              <li>count</li>
-              <li>first</li>
-              <li>last</li>
-              <li>results</li>
-              <li>total_results</li>
-            </ul>
-          </section>
-        </section>
 
-        <section>
-          <h2>{{ theme:partial }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-            </ul>
-          </section>
-        </section>
+            <h2>{{ nav }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>from</li>
+                <li>exclude</li>
+                <li>max_depth</li>
+                <li>include_entries</li>
+                <li>folders_only</li>
+                <li>include_content</li>
+              </ul>
+            </section>
 
-        <section>
-          <h2>{{ theme:asset }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-            </ul>
+            <section>
+              <h3>Variables</h3>
+              <ul>
+                <li>is_current</li>
+                <li>is_parent</li>
+                <li>url</li>
+                <li>title</li>
+                <li>children</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ theme:js }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-            </ul>
+            <h2>{{ nav:count }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>from</li>
+                <li>max_depth</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ theme:css }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-            </ul>
+            <h2>{{ nav:breadcrumbs }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>url</li>
+                <li>include_home</li>
+                <li>reverse</li>
+                <li>backspace</li>
+              </ul>
+            </section>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ theme:img }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-            </ul>
+            <h2>{{ obfuscate }}</h2>
           </section>
-        </section>
 
-        <section>
-          <h2>{{ transform }}</h2>
           <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>src</li>
-              <li>destination</li>
-              <li>quality</li>
-              <li>width</li>
-              <li>height</li>
-              <li>
-                action (default:resize)
-                <ul>
-                  <li>resize</li>
-                  <li>crop</li>
-                  <li>smart</li>
-                </ul>
-              </li>
-              <li>ratio</li>
-              <li>upsize</li>
-              <li>pos_x</li>
-              <li>pos_y</li>
-              <li>rotate</li>
-              <li>flip</li>
-              <li>blur</li>
-              <li>pixelate</li>
-              <li>greyscale</li>
-              <li>
-                type
-                <ul>
-                  <li>jpg</li>
-                  <li>png</li>
-                  <li>gif</li>
-                </ul>
-              </li>
-            </ul>
+            <h2>{{ pages:listing }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>folder</li>
+                <li>taxonomy</li>
+                <li>show_hidden</li>
+                <li>conditions</li>
+                <li>sort_by</li>
+                <li>sort_dir</li>
+                <li>limit</li>
+                <li>offset</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Available Tags</h3>
+              <ul>
+                <li>first</li>
+                <li>last</li>
+                <li>index</li>
+                <li>zero_index</li>
+                <li>total_results</li>
+              </ul>
+            </section>
           </section>
-        </section>
+
+          <section>
+            <h2>{{ path }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>post:[variable]</h2>
+          </section>
+
+          <section>
+            <h2>{{ redirect }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>url</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ switch }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>between</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ taxonomy:listing }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>type</li>
+                <li>folder</li>
+                <li>min_count</li>
+                <li>sort_by</li>
+                <li>sort_dir</li>
+                <li>limit</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Available Tags</h3>
+              <ul>
+                <li>name</li>
+                <li>url</li>
+                <li>slug</li>
+                <li>count</li>
+                <li>first</li>
+                <li>last</li>
+                <li>results</li>
+                <li>total_results</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ theme:partial }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ theme:asset }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ theme:js }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ theme:css }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ theme:img }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ transform }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>src</li>
+                <li>destination</li>
+                <li>quality</li>
+                <li>width</li>
+                <li>height</li>
+                <li>
+                  action (default:resize)
+                  <ul>
+                    <li>resize</li>
+                    <li>crop</li>
+                    <li>smart</li>
+                  </ul>
+                </li>
+                <li>ratio</li>
+                <li>upsize</li>
+                <li>pos_x</li>
+                <li>pos_y</li>
+                <li>rotate</li>
+                <li>flip</li>
+                <li>blur</li>
+                <li>pixelate</li>
+                <li>greyscale</li>
+                <li>
+                  type
+                  <ul>
+                    <li>jpg</li>
+                    <li>png</li>
+                    <li>gif</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </div>
       </div><!-- end .blocks -->
-      <hr>
-      <div class="blocks blocks-fieldtypes" id="fieldtypes">
-        <section>
-          <h2>text</h2>
+
+
+
+      <div class="area" id="fieldtypes">
+        <h1>Fieldtypes</h1>
+        <div class="blocks blocks-fieldtypes">
+
           <section>
-            <h3>Options</h3>
-            <ul>
-              <li>display</li>
-              <li>default</li>
+            <h2>checkbox</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+              </ul>
+            </section>
           </section>
-        </section>
+
+          <section>
+            <h2>color</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>select_on_page</li>
+                <li>starting_color</li>
+                <li>show_input</li>
+                <li>show_initial</li>
+                <li>show_alpha</li>
+                <li>choose_text</li>
+                <li>cancel_text</li>
+                <li>preferred_format</li>
+                <li>show_palette</li>
+                <li>show_palette_only</li>
+                <li>palette</li>
+                <li>show_selection_palette</li>
+                <li>max_selection_size</li>
+                <li>local_storage_key</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>date</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>file</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>allowed</li>
+                <li>destination</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>grid</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>starting_rows</li>
+                <li>min_rows</li>
+                <li>max_rows</li>
+                <li>fields
+                  <ul>
+                    <li>width</li>
+                  </ul>
+                </li>          
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>hidden</h2>
+          </section>
+
+          <section>
+            <h2>location</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>starting_latitude</li>
+                <li>starting_logitude</li>
+                <li>starting_zoom</li>
+                <li>min_zoom</li>
+                <li>max_zoom</li>
+                <li>float_precision</li>
+                <li>allow_geolocation</li>
+                <li>geolocation_zoom</li>
+                <li>use_foursquare</li>
+                <li>foursquare_client_id</li>
+                <li>foursquare_client_secret</li>
+                <li>foursquare_radius</li>
+                <li>interaction
+                    <ul>
+                      <li>scroll_wheel_zoom</li>
+                      <li>double_click_zoom</li>
+                      <li>box_zoom</li>
+                      <li>touch_zoom</li>
+                      <li>draggable</li>
+                    </ul>  
+                </li>
+                <li>cloudmade_api_key</li>
+                <li>cloudmade_tile_set_id</li>
+                <li>detect_retina</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>markitup</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>default</li>
+                <li>height</li>
+                <li>instructions</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>radio</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>default</li>
+                <li>height</li>
+                <li>options</li>
+                <li>instructions</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>redactor</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>image_dir</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>section</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>instructions</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>select</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>options</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>suggest</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>placeholder</li>
+                <li>multiple</li>
+                <li>content
+                  <ul>
+                    <li>folder</li>
+                    <li>label</li>
+                    <li>value</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>select</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>templates</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>default</li>
+                <li>instructions</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>text</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>default</li>
+                <li>instructions</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>textarea</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>code_formatting
+                  <ul>
+                    <li>true</li>
+                    <li>false (default)</li>
+                  </ul>
+                </li>
+                <li>display</li>
+                <li>default</li>
+                <li>instructions</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>time</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>users</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+              </ul>
+            </section>
+          </section>
+
+        </div>
       </div><!-- end .blocks -->
-      <hr>
-      <h1>Reference</h1>
-      <div id="reference" class="blocks">
-        <section>
-          <h2>{{ current_date }}</h2>
-          <section>
-            <h3>Parameters</h3>
-            <ul>
-              <li>format</li>
-            </ul>
-          </section>
-          <table>
-            <thead>
-              <tr>
-                <th>Format</th>
-                <th>Returned Values</th>
-              </tr>
-            </thead>
 
-            <tfoot>
-              <tr>
-                <td colspan="2"><a href="http://uk1.php.net/manual/en/function.date.php">Taken from the PHP Manual</a></td>
-              </tr>
-            </tfoot>
+      <div class="area" id="reference">
+        <h1>Reference</h1>
+          <div class="blocks blocks-reference">
+            <section>
+              <h2>Date Formatting</h2>
+              <section>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Format</th>
+                      <th>Returned Values</th>
+                    </tr>
+                  </thead>
 
-            <tbody>
-              <tr>
-                <td>d</td>
-                <td>01 to 31</td>
-              </tr>
-              <tr>
-                <td>D</td>
-                <td>Mon through Sun</td>
-              </tr>
-              <tr>
-                <td>L</td>
-                <td>1 to 31</td>
-              </tr>
-              <tr>
-                <td>l</td>
-                <td>Sunday through Saturday</td>
-              </tr>
-              <tr>
-                <td>N</td>
-                <td>1 (Monday) to 7 (Sunday)</td>
-              </tr>
-              <tr>
-                <td>S</td>
-                <td>st, nd, rd or th</td>
-              </tr>
-              <tr>
-                <td>W</td>
-                <td>0 (Sunday) to 6 (Saturday)</td>
-              </tr>
-              <tr>
-                <td>Z</td>
-                <td>0 through 365</td>
-              </tr>
-              <tr>
-                <td>F</td>
-                <td>January through December</td>
-              </tr>
-              <tr>
-                <td>m</td>
-                <td>01 through 12</td>
-              </tr>
-              <tr>
-                <td>m</td>
-                <td>01 through 12</td>
-              </tr>
-              <tr>
-                <td>M</td>
-                <td>Jan through Dec</td>
-              </tr>
-              <tr>
-                <td>n</td>
-                <td>1 through 12</td>
-              </tr>
-              <tr>
-                <td>t</td>
-                <td>28 through 31</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2"><a href="http://uk1.php.net/manual/en/function.date.php">Taken from the PHP Manual</a></td>
+                    </tr>
+                  </tfoot>
+
+                  <tbody>
+                    <tr>
+                      <td>d</td>
+                      <td>01 to 31</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>Mon through Sun</td>
+                    </tr>
+                    <tr>
+                      <td>L</td>
+                      <td>1 to 31</td>
+                    </tr>
+                    <tr>
+                      <td>l</td>
+                      <td>Sunday through Saturday</td>
+                    </tr>
+                    <tr>
+                      <td>N</td>
+                      <td>1 (Monday) to 7 (Sunday)</td>
+                    </tr>
+                    <tr>
+                      <td>S</td>
+                      <td>st, nd, rd or th</td>
+                    </tr>
+                    <tr>
+                      <td>W</td>
+                      <td>0 (Sunday) to 6 (Saturday)</td>
+                    </tr>
+                    <tr>
+                      <td>Z</td>
+                      <td>0 through 365</td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>January through December</td>
+                    </tr>
+                    <tr>
+                      <td>m</td>
+                      <td>01 through 12</td>
+                    </tr>
+                    <tr>
+                      <td>M</td>
+                      <td>Jan through Dec</td>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+                      <td>1 through 12</td>
+                    </tr>
+                    <tr>
+                      <td>t</td>
+                      <td>28 through 31</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+          </div>
+        </div>
       </div><!-- end .blocks -->
     </div><!-- END .container -->
 

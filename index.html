@@ -31,22 +31,22 @@
 
 </head>
 
-  <body>
+  <body class="expanded-header">
     <header role="banner">
       <div class="container">
           <h1>Statamic Cheat Sheet <small>on <a href="https://github.com/statamicthemes/statamic-cheat-sheet/tree/gh-pages">github</a></small></h1>
           <nav>
-            <a href="#tags" title="tags">tags</a>
-            <a href="#fieldtypes" title="fieldtypes">fieldtypes</a>
-            <a href="#reference" title="reference">reference</a>
+            <a data-scroll-nav="0" title="tags">tags</a>
+            <a data-scroll-nav="1" title="fieldtypes">fieldtypes</a>
+            <a data-scroll-nav="2" title="reference">reference</a>
           </nav>
       </div><!-- END .container -->
     </header>
 
     <div role="main" class="container">
-      <div class="area">
+      <div class="area" id="tags" data-scroll-index="0">
         <h1>Tags</h1>
-        <div class="blocks blocks-tags" id="tags">
+        <div class="blocks blocks-tags">
           <section>
             <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:listing }}">
               <h2>{{ entries:listing }}</h2>
@@ -423,7 +423,7 @@
 
 
 
-      <div class="area" id="fieldtypes">
+      <div class="area" id="fieldtypes" data-scroll-index="1">
         <h1>Fieldtypes</h1>
         <div class="blocks blocks-fieldtypes">
 
@@ -610,6 +610,7 @@
             <section>
               <h3>Options</h3>
               <ul>
+                <li>create</li>
                 <li>display</li>
                 <li>
                   content
@@ -712,7 +713,7 @@
         </div>
       </div><!-- end .blocks -->
 
-      <div class="area" id="reference">
+      <div class="area" id="reference" data-scroll-index="2">
         <h1>Reference</h1>
           <div class="blocks blocks-reference">
             <section>

@@ -35,7 +35,7 @@ header[role="banner"] {
 	  	float: left;
 		  display: block;
 		  line-height: 80px;
-		  color: #fff;
+		  color: $white;
 		  padding: 0 1.5em;
 		  &[title="tags"]:hover { background: lighten($mainColor,10%); }
 		  &[title="fieldtypes"]:hover { background: lighten($statamicGreen,10%); }
@@ -59,11 +59,11 @@ header[role="banner"] {
 	@include column-gap(1.5em);
 	> section {
 		@include column-break-inside(avoid);
-		@include box-shadow(3px 3px 0px rgba(#000,0.05));
+		@include box-shadow(3px 3px 0px rgba($black,0.05));
 		margin-right: 3px;
 		display: inline-block;
 		width: 100%;
-		background: #fff;
+		background: $white;
 		margin-bottom: 1.5em;
 		h2, h3 {
 			margin: 0;
@@ -125,7 +125,7 @@ header[role="banner"] {
 				padding-right: 12px;
 				font-size: 13px;
 				margin: 0 2px 2px 0;
-				color: #fff;
+				color: $white;
 				}
 			}
 		li.close-block {

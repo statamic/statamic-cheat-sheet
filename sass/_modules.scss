@@ -126,8 +126,14 @@ header[role="banner"] {
 				font-size: 13px;
 				margin: 0 2px 2px 0;
 				color: $white;
+				small {
+					color: rgba(255,255,255,.5);
+					display: inline-block;
+					font-size: .7em;
+					padding-left: 2px;
 				}
 			}
+		}
 		li.close-block {
 			a.trigger { background: lighten($mainColor,65%); }
 			ul { display: none; }

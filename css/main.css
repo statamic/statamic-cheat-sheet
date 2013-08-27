@@ -224,7 +224,7 @@ figure {
  */
 /* line 253, ../sass/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -433,16 +433,16 @@ a {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
   color: #fa522a; }
-  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 18, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
     color: #fa522a; }
-  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 21, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
     color: #d32c05; }
-  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #d32c05; }
-  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  /* line 27, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
     color: #d32c05; }
 
@@ -563,9 +563,10 @@ table {
 
 /* line 15, ../sass/_layout.scss */
 header[role="banner"] {
-  background-color: #f5f4ee; }
+  background-color: #f5f4ee;
+  border-bottom: 1px solid #fff; }
 
-/* line 18, ../sass/_layout.scss */
+/* line 19, ../sass/_layout.scss */
 footer[role="contentinfo"] {
   padding: 1em;
   background-color: #f5f4ee;
@@ -606,15 +607,6 @@ header[role="banner"] {
     display: block; }
     /* line 42, ../sass/_modules.scss */
     header[role="banner"] nav a {
-<<<<<<< HEAD
-      float: left;
-      display: block;
-      line-height: 80px;
-      color: white;
-      padding: 0 1.5em; }
-      /* line 40, ../sass/_modules.scss */
-      header[role="banner"] nav a[title="tags"]:hover {
-=======
       line-height: 40px;
       color: #fff;
       padding: 0 1.5em;
@@ -624,7 +616,6 @@ header[role="banner"] {
         cursor: pointer; }
       /* line 48, ../sass/_modules.scss */
       header[role="banner"] nav a[title="tags"].active, header[role="banner"] nav a[title="tags"]:hover {
->>>>>>> pr/5
         background: #4b5c61; }
       /* line 49, ../sass/_modules.scss */
       header[role="banner"] nav a[title="fieldtypes"].active, header[role="banner"] nav a[title="fieldtypes"]:hover {
@@ -643,7 +634,7 @@ header[role="banner"] {
 
 /* line 64, ../sass/_modules.scss */
 .blocks {
-  padding: 0.5em 0 0;
+  padding: .5em 0 0;
   overflow: visible;
   -webkit-column-count: 1;
   -moz-column-count: 1;
@@ -664,8 +655,8 @@ header[role="banner"] {
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
     margin-right: 3px;
     display: inline-block;
-    width: 95%;
-    background: white;
+    width: 100%;
+    background: #fff;
     margin-bottom: 1.5em; }
     /* line 77, ../sass/_modules.scss */
     .blocks > section h2, .blocks > section h3 {
@@ -678,7 +669,7 @@ header[role="banner"] {
       letter-spacing: 0.1em;
       line-height: 2.25;
       font-size: 1em;
-      text-shadow: 0 -1px 0 black; }
+      text-shadow: 0 -1px 0 #000; }
     /* line 89, ../sass/_modules.scss */
     .blocks > section a:hover h2 {
       color: #fff; }
@@ -708,7 +699,7 @@ header[role="banner"] {
     .blocks > section a.trigger {
       float: right;
       display: block;
-      padding: 0 0.5em;
+      padding: 0 .5em;
       background: #dfe4e6;
       color: #fff;
       background: #354144; }
@@ -731,35 +722,6 @@ header[role="banner"] {
         padding-right: 12px;
         font-size: 13px;
         margin: 0 2px 2px 0;
-<<<<<<< HEAD
-        color: white; }
-        /* line 129, ../sass/_modules.scss */
-        .blocks > section ul ul li small {
-          color: rgba(255, 255, 255, 0.5);
-          display: inline-block;
-          font-size: .7em;
-          padding-left: 2px; }
-    /* line 138, ../sass/_modules.scss */
-    .blocks > section li.close-block a.trigger {
-      background: #dfe4e6; }
-    /* line 139, ../sass/_modules.scss */
-    .blocks > section li.close-block ul {
-      display: none; }
-
-/* line 144, ../sass/_modules.scss */
-.blocks-tags h2 {
-  background-color: #354144; }
-
-/* line 145, ../sass/_modules.scss */
-.blocks-fieldtypes h2 {
-  background-color: #364539; }
-
-/* line 146, ../sass/_modules.scss */
-.blocks-reference h2 {
-  background-color: #403645; }
-
-/* line 148, ../sass/_modules.scss */
-=======
         color: #fff; }
     /* line 141, ../sass/_modules.scss */
     .blocks > section li.close-block a.trigger {
@@ -781,35 +743,10 @@ header[role="banner"] {
   background-color: #403645; }
 
 /* line 151, ../sass/_modules.scss */
->>>>>>> pr/5
 .area {
   padding: 2em 0;
   border-bottom: 1px solid #e2dfce; }
 
-<<<<<<< HEAD
-@media all and (min-width: 33em) {
-  /* line 11, ../sass/_states.scss */
-  body {
-    font-size: 100%; } }
-@media only screen and (max-width: 1900px) {
-  /* line 16, ../sass/_states.scss */
-  .blocks {
-    -webkit-column-count: 6;
-    -moz-column-count: 6;
-    -ms-column-count: 6;
-    -o-column-count: 6;
-    column-count: 6; } }
-@media only screen and (max-width: 1600px) {
-  /* line 17, ../sass/_states.scss */
-  .blocks {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    -ms-column-count: 5;
-    -o-column-count: 5;
-    column-count: 5; } }
-@media only screen and (max-width: 1300px) {
-  /* line 18, ../sass/_states.scss */
-=======
 @media only screen and (min-width: 600px) {
   /* line 157, ../sass/_modules.scss */
   .blocks {
@@ -875,31 +812,12 @@ header[role="banner"] {
     column-count: 3; } }
 @media only screen and (min-width: 1200px) {
   /* line 189, ../sass/_modules.scss */
->>>>>>> pr/5
   .blocks {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     -ms-column-count: 4;
     -o-column-count: 4;
     column-count: 4; } }
-<<<<<<< HEAD
-@media only screen and (max-width: 1000px) {
-  /* line 19, ../sass/_states.scss */
-  .blocks {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    -ms-column-count: 3;
-    -o-column-count: 3;
-    column-count: 3; } }
-@media only screen and (max-width: 700px) {
-  /* line 20, ../sass/_states.scss */
-  .blocks {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    -ms-column-count: 2;
-    -o-column-count: 2;
-    column-count: 2; } }
-=======
 @media only screen and (min-width: 1500px) {
   /* line 191, ../sass/_modules.scss */
   .blocks {
@@ -920,4 +838,43 @@ header[role="banner"] {
   /* line 11, ../sass/_states.scss */
   body {
     font-size: 100%; } }
->>>>>>> pr/5
+@media only screen and (max-width: 1900px) {
+  /* line 16, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 6;
+    -moz-column-count: 6;
+    -ms-column-count: 6;
+    -o-column-count: 6;
+    column-count: 6; } }
+@media only screen and (max-width: 1600px) {
+  /* line 17, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    -ms-column-count: 5;
+    -o-column-count: 5;
+    column-count: 5; } }
+@media only screen and (max-width: 1300px) {
+  /* line 18, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -ms-column-count: 4;
+    -o-column-count: 4;
+    column-count: 4; } }
+@media only screen and (max-width: 1000px) {
+  /* line 19, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3; } }
+@media only screen and (max-width: 700px) {
+  /* line 20, ../sass/_states.scss */
+  .blocks {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2; } }

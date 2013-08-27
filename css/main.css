@@ -553,10 +553,9 @@ table {
 
 /* line 15, ../sass/_layout.scss */
 header[role="banner"] {
-  background-color: #f5f4ee;
-  border-bottom: 1px solid white; }
+  background-color: #f5f4ee; }
 
-/* line 19, ../sass/_layout.scss */
+/* line 18, ../sass/_layout.scss */
 footer[role="contentinfo"] {
   padding: 1em;
   background-color: #f5f4ee;
@@ -568,8 +567,11 @@ header[role="banner"] {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  *zoom: 1; }
-  /* line 17, ../sass/_modules.scss */
+  *zoom: 1;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  /* line 20, ../sass/_modules.scss */
   header[role="banner"] h1 {
     margin-bottom: 0;
     color: #fff;
@@ -578,45 +580,48 @@ header[role="banner"] {
     float: left;
     text-align: center;
     width: 100%; }
-    /* line 25, ../sass/_modules.scss */
+    /* line 28, ../sass/_modules.scss */
     header[role="banner"] h1 small {
       display: none;
       font-size: 50%; }
-  /* line 30, ../sass/_modules.scss */
+  /* line 33, ../sass/_modules.scss */
   header[role="banner"] p {
     margin: 0;
     color: #f5f4ee; }
-  /* line 34, ../sass/_modules.scss */
+  /* line 37, ../sass/_modules.scss */
   header[role="banner"] nav {
     float: right;
     width: 100%;
     text-align: center;
     display: block; }
-    /* line 39, ../sass/_modules.scss */
+    /* line 42, ../sass/_modules.scss */
     header[role="banner"] nav a {
       line-height: 40px;
       color: #fff;
       padding: 0 1.5em;
       display: inline-block; }
-      /* line 44, ../sass/_modules.scss */
-      header[role="banner"] nav a.active, header[role="banner"] nav a[title="tags"]:hover {
+      /* line 47, ../sass/_modules.scss */
+      header[role="banner"] nav a:hover {
+        cursor: pointer; }
+      /* line 48, ../sass/_modules.scss */
+      header[role="banner"] nav a[title="tags"].active, header[role="banner"] nav a[title="tags"]:hover {
         background: #4b5c61; }
-      /* line 45, ../sass/_modules.scss */
-      header[role="banner"] nav a.active, header[role="banner"] nav a[title="fieldtypes"]:hover {
+      /* line 49, ../sass/_modules.scss */
+      header[role="banner"] nav a[title="fieldtypes"].active, header[role="banner"] nav a[title="fieldtypes"]:hover {
         background: #4c6251; }
-      /* line 46, ../sass/_modules.scss */
-      header[role="banner"] nav a.active, header[role="banner"] nav a[title="reference"]:hover {
+      /* line 50, ../sass/_modules.scss */
+      header[role="banner"] nav a[title="reference"].active, header[role="banner"] nav a[title="reference"]:hover {
         background: #5b4c62; }
 
-/* line 51, ../sass/_modules.scss */
+/* line 55, ../sass/_modules.scss */
 [role="main"] {
   margin: 0 auto; }
-  /* line 53, ../sass/_modules.scss */
+  /* line 57, ../sass/_modules.scss */
   [role="main"] h1 {
     display: block;
     text-align: center; }
 
-/* line 60, ../sass/_modules.scss */
+/* line 64, ../sass/_modules.scss */
 .blocks {
   padding: 0.5em 0 0;
   overflow: visible;
@@ -630,7 +635,7 @@ header[role="banner"] {
   -ms-column-gap: 1.5em;
   -o-column-gap: 1.5em;
   column-gap: 1.5em; }
-  /* line 65, ../sass/_modules.scss */
+  /* line 69, ../sass/_modules.scss */
   .blocks > section {
     -webkit-column-break-inside: avoid;
     column-break-inside: avoid;
@@ -642,11 +647,11 @@ header[role="banner"] {
     width: 100%;
     background: #fff;
     margin-bottom: 1.5em; }
-    /* line 73, ../sass/_modules.scss */
+    /* line 77, ../sass/_modules.scss */
     .blocks > section h2, .blocks > section h3 {
       margin: 0;
       padding: 0 0 0 12px; }
-    /* line 77, ../sass/_modules.scss */
+    /* line 81, ../sass/_modules.scss */
     .blocks > section h2 {
       color: #f5f4ee;
       margin: 0;
@@ -654,10 +659,10 @@ header[role="banner"] {
       line-height: 2.25;
       font-size: 1em;
       text-shadow: 0 -1px 0 black; }
-    /* line 85, ../sass/_modules.scss */
+    /* line 89, ../sass/_modules.scss */
     .blocks > section a:hover h2 {
       color: #fff; }
-    /* line 86, ../sass/_modules.scss */
+    /* line 90, ../sass/_modules.scss */
     .blocks > section h3 {
       font-size: .65em;
       text-transform: uppercase;
@@ -666,20 +671,20 @@ header[role="banner"] {
       letter-spacing: 0.2em;
       line-height: 2;
       font-weight: bold; }
-    /* line 95, ../sass/_modules.scss */
+    /* line 99, ../sass/_modules.scss */
     .blocks > section ul {
       list-style: none;
       margin: 0;
       padding: 0;
       border-top: 1px solid #f5f4ee; }
-    /* line 101, ../sass/_modules.scss */
+    /* line 105, ../sass/_modules.scss */
     .blocks > section li {
       padding: 0 0 0 12px;
       line-height: 2;
       font-size: .85em;
       border-bottom: 1px solid #f5f4ee;
       position: relative; }
-    /* line 108, ../sass/_modules.scss */
+    /* line 112, ../sass/_modules.scss */
     .blocks > section a.trigger {
       float: right;
       display: block;
@@ -687,7 +692,7 @@ header[role="banner"] {
       background: #dfe4e6;
       color: #fff;
       background: #354144; }
-    /* line 116, ../sass/_modules.scss */
+    /* line 120, ../sass/_modules.scss */
     .blocks > section ul ul {
       display: block;
       background: #354144;
@@ -698,7 +703,7 @@ header[role="banner"] {
       z-index: 1;
       width: 100%;
       border-top: 0px; }
-      /* line 126, ../sass/_modules.scss */
+      /* line 130, ../sass/_modules.scss */
       .blocks > section ul ul li {
         display: inline-block;
         border: none;
@@ -707,32 +712,32 @@ header[role="banner"] {
         font-size: 13px;
         margin: 0 2px 2px 0;
         color: #fff; }
-    /* line 137, ../sass/_modules.scss */
+    /* line 141, ../sass/_modules.scss */
     .blocks > section li.close-block a.trigger {
       background: #dfe4e6; }
-    /* line 138, ../sass/_modules.scss */
+    /* line 142, ../sass/_modules.scss */
     .blocks > section li.close-block ul {
       display: none; }
 
-/* line 143, ../sass/_modules.scss */
+/* line 147, ../sass/_modules.scss */
 .blocks-tags h2 {
   background-color: #354144; }
 
-/* line 144, ../sass/_modules.scss */
+/* line 148, ../sass/_modules.scss */
 .blocks-fieldtypes h2 {
   background-color: #364539; }
 
-/* line 145, ../sass/_modules.scss */
+/* line 149, ../sass/_modules.scss */
 .blocks-reference h2 {
   background-color: #403645; }
 
-/* line 147, ../sass/_modules.scss */
+/* line 151, ../sass/_modules.scss */
 .area {
-  padding: 1em 0;
+  padding: 2em 0;
   border-bottom: 1px solid #e2dfce; }
 
 @media only screen and (min-width: 600px) {
-  /* line 152, ../sass/_modules.scss */
+  /* line 157, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -740,25 +745,54 @@ header[role="banner"] {
     -o-column-count: 2;
     column-count: 2; } }
 @media only screen and (min-width: 900px) {
-  /* line 156, ../sass/_modules.scss */
-  header[role="banner"] h1 {
-    text-align: left;
-    width: auto;
-    line-height: 80px;
-    height: 80px; }
-    /* line 161, ../sass/_modules.scss */
-    header[role="banner"] h1 small {
-      display: inline; }
-  /* line 163, ../sass/_modules.scss */
-  header[role="banner"] nav {
-    float: right;
-    width: auto; }
-    /* line 166, ../sass/_modules.scss */
-    header[role="banner"] nav a {
-      float: left;
-      line-height: 80px; }
+  /* line 161, ../sass/_modules.scss */
+  .area#tags {
+    padding-top: 7em; }
 
-  /* line 173, ../sass/_modules.scss */
+  /* line 162, ../sass/_modules.scss */
+  header[role="banner"] {
+    position: fixed; }
+    /* line 164, ../sass/_modules.scss */
+    header[role="banner"] h1 {
+      text-align: left;
+      width: auto;
+      line-height: 80px;
+      height: 80px; }
+      /* line 169, ../sass/_modules.scss */
+      header[role="banner"] h1 small {
+        display: inline; }
+    /* line 171, ../sass/_modules.scss */
+    header[role="banner"] nav {
+      float: right;
+      width: auto; }
+      /* line 174, ../sass/_modules.scss */
+      header[role="banner"] nav a {
+        float: left;
+        line-height: 80px; }
+
+  /* line 181, ../sass/_modules.scss */
+  body.slim-header header[role="banner"] {
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black; }
+    /* line 183, ../sass/_modules.scss */
+    body.slim-header header[role="banner"] h1 {
+      line-height: 40px;
+      height: 40px;
+      font-size: 20px;
+      -webkit-transition: 0.3s linear;
+      -moz-transition: 0.3s linear;
+      -o-transition: 0.3s linear;
+      transition: 0.3s linear; }
+    /* line 184, ../sass/_modules.scss */
+    body.slim-header header[role="banner"] nav a {
+      line-height: 40px;
+      -webkit-transition: 0.3s linear;
+      -moz-transition: 0.3s linear;
+      -o-transition: 0.3s linear;
+      transition: 0.3s linear; }
+
+  /* line 187, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -766,7 +800,7 @@ header[role="banner"] {
     -o-column-count: 3;
     column-count: 3; } }
 @media only screen and (min-width: 1200px) {
-  /* line 175, ../sass/_modules.scss */
+  /* line 189, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -774,7 +808,7 @@ header[role="banner"] {
     -o-column-count: 4;
     column-count: 4; } }
 @media only screen and (min-width: 1500px) {
-  /* line 176, ../sass/_modules.scss */
+  /* line 191, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 5;
     -moz-column-count: 5;
@@ -782,7 +816,7 @@ header[role="banner"] {
     -o-column-count: 5;
     column-count: 5; } }
 @media only screen and (min-width: 1800px) {
-  /* line 177, ../sass/_modules.scss */
+  /* line 193, ../sass/_modules.scss */
   .blocks {
     -webkit-column-count: 6;
     -moz-column-count: 6;

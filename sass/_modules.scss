@@ -14,6 +14,9 @@ header[role="banner"] {
   margin: 0;
   padding: 0;
   @include clearfix;
+	top: 0;
+	width: 100%;
+	z-index: 2;
   h1 {
     margin-bottom: 0;
     color: #fff;
@@ -41,9 +44,10 @@ header[role="banner"] {
       color: #fff;
       padding: 0 1.5em;
       display: inline-block;
-      &.active, &[title="tags"]:hover { background: lighten($mainColor,10%); }
-      &.active, &[title="fieldtypes"]:hover { background: lighten($statamicGreen,10%); }
-      &.active, &[title="reference"]:hover { background: lighten($statamicPlumb,10%); }
+      &:hover { cursor: pointer; }
+      &[title="tags"].active, &[title="tags"]:hover { background: lighten($mainColor,10%); }
+      &[title="fieldtypes"].active, &[title="fieldtypes"]:hover { background: lighten($statamicGreen,10%); }
+      &[title="reference"].active, &[title="reference"]:hover { background: lighten($statamicPlumb,10%); }
     }
   }
 }
@@ -145,14 +149,18 @@ header[role="banner"] {
 .blocks-reference { h2 { background-color: $statamicPlumb; } }
 
 .area {
-  padding: 1em 0;
+  padding: 2em 0;
   border-bottom: 1px solid darken($statamicTan,10%);
 }
+
 @media only screen and ( min-width: 600px ) {
 	.blocks { @include column-count(2); }
 	}
+
 @media only screen and ( min-width: 900px ) {
+	.area#tags { padding-top: 7em; }
 	header[role="banner"] {
+		position: fixed;
 		h1 {
 		  text-align: left;
 		  width: auto;
@@ -168,10 +176,18 @@ header[role="banner"] {
         line-height: 80px;
       }
     }
-	}
-
+  }
+  body.slim-header {
+		header[role="banner"] {
+			@include box-shadow(0 0 5px rgba(#000,1));
+			h1 { line-height: 40px; height: 40px; font-size: 20px; @include transition(.3s linear); }
+			nav a { line-height: 40px; @include transition(.3s linear); }
+			}
+   	}
 	.blocks { @include column-count(3); }
 	}
 @media only screen and ( min-width: 1200px ) { .blocks { @include column-count(4); } }
+
 @media only screen and ( min-width: 1500px ) { .blocks { @include column-count(5); } }
+
 @media only screen and ( min-width: 1800px ) { .blocks { @include column-count(6); } }

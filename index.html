@@ -734,6 +734,9 @@
 
                   <tbody>
                     <tr>
+                      <th colspan="2" scope="rowgroup">Day</th>
+                    </tr>
+                    <tr>
                       <td>d</td>
                       <td>01 to 31</td>
                     </tr>
@@ -766,6 +769,9 @@
                       <td>0 through 365</td>
                     </tr>
                     <tr>
+                      <th colspan="2" scope="rowgroup">Month</th>
+                    </tr>
+                    <tr>
                       <td>F</td>
                       <td>January through December</td>
                     </tr>
@@ -785,10 +791,128 @@
                       <td>t</td>
                       <td>28 through 31</td>
                     </tr>
+                    <tr>
+                      <th colspan="2" scope="rowgroup">Year</th>
+                    </tr>
+                    <tr>
+                      <td>Y</td>
+                      <td>1999 or 2013</td>
+                    </tr>
+                    <tr>
+                      <td>y</td>
+                      <td>99 or 13</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2" scope="rowgroup">Time</th>
+                    </tr>
+                    <tr>
+                      <td>a</td>
+                      <td>am or pm</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>AM or PM</td>
+                    </tr>
+                    <tr>
+                      <td>g</td>
+                      <td>hour: 1 through 12</td>
+                    </tr>
+                    <tr>
+                      <td>G</td>
+                      <td>hour: 0 through 23</td>
+                    </tr>
+                    <tr>
+                      <td>h</td>
+                      <td>hour: 01 through 12</td>
+                    </tr>
+                    <tr>
+                      <td>H</td>
+                      <td>hour: 00 through 23</td>
+                    </tr>
+                    <tr>
+                      <td>i</td>
+                      <td>minutes: 00 to 59</td>
+                    </tr>
+                    <tr>
+                      <td>s</td>
+                      <td>seconds: 00 through 59</td>
+                    </tr>
                   </tbody>
                 </table>
               </section>
             </section>
+
+            <section>
+              <h2>Markdown</h2>
+              <section>
+
+<h3>Headers</h3>
+<pre><code># An &lt;h1&gt; tag
+## An &lt;h2&gt; tag
+###### An &lt;h6&gt; tag</code></pre>
+
+<h3>Text</h3>
+<pre><code>*This will be italic*
+_This will also be italic
+**This will be bold**
+__This will also be bold__</code></pre>
+
+<h3>Unordered Lists</h3>
+<pre><code>* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b</code></pre>
+
+<h3>Ordered Lists</h3>
+<pre><code>1. Item 1
+2. Item 2
+  * Item 2a
+  * Item 2b</code></pre>
+
+<h3>Images</h3>
+<pre><code>![Statamic Logo](/img/logo.png)</code></pre>
+
+<h3>Links</h3>
+<pre><code>&lt;http://statamic&gt;
+or
+[Statamic](http://statamic.com)</code></pre>
+
+<h3>Email Addresses</h3>
+<pre><code>&lt;email@example.com&gt;</code></pre>
+
+<h3>Blockquotes</h3>
+<pre><code>From the great Ron Swanson:
+
+  > Never half-ass two things, whole-ass one thing.</code></pre>
+
+<h3>Tables</h3>
+<pre><code>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell</code></pre>
+
+<h3>Code Blocks</h3>
+<pre><code>~~~ {.add .classes .here}
+{{ loop }}
+  {{ variable }}
+{{ /loop }}
+~~~</code></pre>
+
+<h3>Inline Code</h3>
+<pre><code>Check out `{{ transform }}`.</code></pre>
+
+<h3>Mixing HTML</h3>
+<pre><code>You can write HTML inside Markdown, and even parse it like so:
+
+&lt;article markdown="1"&gt;
+  # Your Content
+&lt;/article&gt;
+</code></pre>
+
+              </section>
+            </section>
+
+
           </div>
         </div>
       </div><!-- end .blocks -->

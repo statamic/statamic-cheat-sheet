@@ -63,6 +63,15 @@ blockquote {
 dt { font-weight: bold; }
 dd { margin-bottom: 1em; }
 
+pre {
+  background: darken($tableBg, 3%);
+  border-radius: 2px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: .75em;
+}
+
 // Tables
 table {
   width: 100%;
@@ -90,7 +99,7 @@ table {
   th[scope="row"] { font-weight: normal; }
   th[scope="rowgroup"] { vertical-align: middle; }
   th[scope="row"],
-  th[scope="rowgroup"] { text-align: left; }
+  th[scope="rowgroup"] { color: $darkGrey; text-align: left; }
 
   tbody tr:nth-of-type(even) {
     background-color: darken($tableBg, 3%);

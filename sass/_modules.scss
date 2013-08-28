@@ -55,6 +55,7 @@ header[role="banner"] {
 [role="main"] {
   margin: 0 auto;
   h1 {
+    padding-top: 40px;
     display: block;
     text-align: center;
   }
@@ -149,7 +150,7 @@ header[role="banner"] {
 .blocks-reference { h2 { background-color: $statamicPlumb; } }
 
 .area {
-  padding: 2em 0;
+  padding: 0 0 2em;
   border-bottom: 1px solid darken($statamicTan,10%);
 }
 
@@ -158,7 +159,7 @@ header[role="banner"] {
 	}
 
 @media only screen and ( min-width: 900px ) {
-	.area#tags { padding-top: 7em; }
+	.area#tags h1 { padding-top: 100px; }
 	header[role="banner"] {
 		position: fixed;
 		h1 {
@@ -186,6 +187,7 @@ header[role="banner"] {
    	}
 	.blocks { @include column-count(3); }
 	}
+
 @media only screen and ( min-width: 1200px ) { .blocks { @include column-count(4); } }
 
 @media only screen and ( min-width: 1500px ) { .blocks { @include column-count(5); } }

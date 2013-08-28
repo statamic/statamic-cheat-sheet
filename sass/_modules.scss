@@ -14,9 +14,9 @@ header[role="banner"] {
   margin: 0;
   padding: 0;
   @include clearfix;
-	top: 0;
-	width: 100%;
-	z-index: 2;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   h1 {
     margin-bottom: 0;
     color: #fff;
@@ -154,43 +154,3 @@ header[role="banner"] {
   border-bottom: 1px solid darken($statamicTan,10%);
   @include clearfix;
 }
-
-@media only screen and ( min-width: 600px ) {
-	.blocks { @include column-count(2); }
-	}
-
-@media only screen and ( min-width: 900px ) {
-	.area#tags h1 { padding-top: 100px; }
-	header[role="banner"] {
-		position: fixed;
-		h1 {
-		  text-align: left;
-		  width: auto;
-		  line-height: 80px;
-		  height: 80px;
-		  small { display: inline; }
-		  }
-    nav {
-      float: right;
-      width: auto;
-      a {
-        float: left;
-        line-height: 80px;
-      }
-    }
-  }
-  body.slim-header {
-		header[role="banner"] {
-			@include box-shadow(0 0 5px rgba(#000,1));
-			h1 { line-height: 40px; height: 40px; font-size: 20px; @include transition(.3s linear); }
-			nav a { line-height: 40px; @include transition(.3s linear); }
-			}
-   	}
-	.blocks { @include column-count(3); }
-	}
-
-@media only screen and ( min-width: 1200px ) { .blocks { @include column-count(4); } }
-
-@media only screen and ( min-width: 1500px ) { .blocks { @include column-count(5); } }
-
-@media only screen and ( min-width: 1800px ) { .blocks { @include column-count(6); } }

@@ -152,6 +152,7 @@ header[role="banner"] {
 .area {
   padding: 0 0 2em;
   border-bottom: 1px solid darken($statamicTan,10%);
+  @include clearfix;
 }
 
 @media only screen and ( min-width: 600px ) {

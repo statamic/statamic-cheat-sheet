@@ -31,22 +31,22 @@
 
 </head>
 
-  <body>
+  <body class="expanded-header">
     <header role="banner">
       <div class="container">
           <h1>Statamic Cheat Sheet <small>on <a href="https://github.com/statamicthemes/statamic-cheat-sheet/tree/gh-pages">github</a></small></h1>
           <nav>
-            <a href="#tags" title="tags">tags</a>
-            <a href="#fieldtypes" title="fieldtypes">fieldtypes</a>
-            <a href="#reference" title="reference">reference</a>
+            <a data-scroll-nav="0" data-scroll-goto="0" title="tags">tags</a>
+            <a data-scroll-nav="1" data-scroll-goto="1" title="fieldtypes">fieldtypes</a>
+            <a data-scroll-nav="2" data-scroll-goto="2" title="reference">reference</a>
           </nav>
       </div><!-- END .container -->
     </header>
 
     <div role="main" class="container">
-      <div class="area">
+      <div class="area" id="tags" data-scroll-index="0">
         <h1>Tags</h1>
-        <div class="blocks blocks-tags" id="tags">
+        <div class="blocks blocks-tags">
           <section>
             <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:listing }}">
               <h2>{{ entries:listing }}</h2>
@@ -423,7 +423,7 @@
 
 
 
-      <div class="area" id="fieldtypes">
+      <div class="area" id="fieldtypes" data-scroll-index="1">
         <h1>Fieldtypes</h1>
         <div class="blocks blocks-fieldtypes">
 
@@ -433,6 +433,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -442,20 +443,21 @@
             <section>
               <h3>Options</h3>
               <ul>
-                <li>select_on_page</li>
-                <li>starting_color</li>
-                <li>show_input</li>
-                <li>show_initial</li>
-                <li>show_alpha</li>
-                <li>choose_text</li>
                 <li>cancel_text</li>
+                <li>choose_text</li>
+                <li>instructions</li>
+                <li>local_storage_key</li>
+                <li>max_selection_size</li>
+                <li>palette</li>
                 <li>preferred_format</li>
+                <li>select_on_page</li>
+                <li>show_alpha</li>
                 <li>show_palette</li>
                 <li>show_palette_only</li>
-                <li>palette</li>
+                <li>show_initial</li>
+                <li>show_input</li>
                 <li>show_selection_palette</li>
-                <li>max_selection_size</li>
-                <li>local_storage_key</li>
+                <li>starting_color</li>
               </ul>
             </section>
           </section>
@@ -466,6 +468,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -475,9 +478,10 @@
             <section>
               <h3>Options</h3>
               <ul>
-                <li>display</li>
                 <li>allowed</li>
                 <li>destination</li>
+                <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -488,14 +492,15 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
-                <li>starting_rows</li>
-                <li>min_rows</li>
-                <li>max_rows</li>
                 <li>fields
                   <ul>
                     <li>width</li>
                   </ul>
-                </li>          
+                </li>
+                <li>instructions</li>
+                <li>min_rows</li>
+                <li>max_rows</li>
+                <li>starting_rows</li>
               </ul>
             </section>
           </section>
@@ -509,18 +514,16 @@
             <section>
               <h3>Options</h3>
               <ul>
-                <li>starting_latitude</li>
-                <li>starting_logitude</li>
-                <li>starting_zoom</li>
-                <li>min_zoom</li>
-                <li>max_zoom</li>
-                <li>float_precision</li>
                 <li>allow_geolocation</li>
-                <li>geolocation_zoom</li>
-                <li>use_foursquare</li>
+                <li>cloudmade_api_key</li>
+                <li>cloudmade_tile_set_id</li>
+                <li>detect_retina</li>
+                <li>float_precision</li>
                 <li>foursquare_client_id</li>
                 <li>foursquare_client_secret</li>
                 <li>foursquare_radius</li>
+                <li>geolocation_zoom</li>
+                <li>instructions</li>
                 <li>interaction
                     <ul>
                       <li>scroll_wheel_zoom</li>
@@ -528,11 +531,14 @@
                       <li>box_zoom</li>
                       <li>touch_zoom</li>
                       <li>draggable</li>
-                    </ul>  
+                    </ul>
                 </li>
-                <li>cloudmade_api_key</li>
-                <li>cloudmade_tile_set_id</li>
-                <li>detect_retina</li>
+                <li>max_zoom</li>
+                <li>min_zoom</li>
+                <li>starting_latitude</li>
+                <li>starting_logitude</li>
+                <li>starting_zoom</li>
+                <li>use_foursquare</li>
               </ul>
             </section>
           </section>
@@ -558,8 +564,8 @@
                 <li>display</li>
                 <li>default</li>
                 <li>height</li>
-                <li>options</li>
                 <li>instructions</li>
+                <li>options</li>
               </ul>
             </section>
           </section>
@@ -571,6 +577,7 @@
               <ul>
                 <li>display</li>
                 <li>image_dir</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -593,6 +600,7 @@
               <ul>
                 <li>display</li>
                 <li>options</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -602,26 +610,38 @@
             <section>
               <h3>Options</h3>
               <ul>
+                <li>create</li>
                 <li>display</li>
-                <li>placeholder</li>
-                <li>multiple</li>
-                <li>content
+                <li>
+                  content
                   <ul>
+                    <li>conditions</li>
                     <li>folder</li>
+                    <li>hide_selected</li>
                     <li>label</li>
+                    <li>show_draft</li>
+                    <li>show_hidden</li>
+                    <li>show_future</li>
+                    <li>show_past</li>
+                    <li>since</li>
+                    <li>type</li>
+                    <li>sort_dir</li>
+                    <li>until</li>
                     <li>value</li>
                   </ul>
                 </li>
-              </ul>
-            </section>
-          </section>
-
-          <section>
-            <h2>select</h2>
-            <section>
-              <h3>Options</h3>
-              <ul>
-                <li>display</li>
+                <li>create</li>
+                <li>instructions</li>
+                <li>max_items</li>
+                <li>persist</li>
+                <li>placeholder</li>
+                <li>
+                  taxonomy
+                  <ul>
+                    <li>folder</li>
+                    <li>type</li>
+                  </ul>
+                </li>
               </ul>
             </section>
           </section>
@@ -658,7 +678,7 @@
                 <li>code_formatting
                   <ul>
                     <li>true</li>
-                    <li>false (default)</li>
+                    <li>false <small>(default)</small></li>
                   </ul>
                 </li>
                 <li>display</li>
@@ -674,6 +694,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -684,6 +705,7 @@
               <h3>Options</h3>
               <ul>
                 <li>display</li>
+                <li>instructions</li>
               </ul>
             </section>
           </section>
@@ -691,7 +713,7 @@
         </div>
       </div><!-- end .blocks -->
 
-      <div class="area" id="reference">
+      <div class="area" id="reference" data-scroll-index="2">
         <h1>Reference</h1>
           <div class="blocks blocks-reference">
             <section>
@@ -712,6 +734,9 @@
                   </tfoot>
 
                   <tbody>
+                    <tr>
+                      <th colspan="2" scope="rowgroup">Day</th>
+                    </tr>
                     <tr>
                       <td>d</td>
                       <td>01 to 31</td>
@@ -745,6 +770,9 @@
                       <td>0 through 365</td>
                     </tr>
                     <tr>
+                      <th colspan="2" scope="rowgroup">Month</th>
+                    </tr>
+                    <tr>
                       <td>F</td>
                       <td>January through December</td>
                     </tr>
@@ -764,10 +792,128 @@
                       <td>t</td>
                       <td>28 through 31</td>
                     </tr>
+                    <tr>
+                      <th colspan="2" scope="rowgroup">Year</th>
+                    </tr>
+                    <tr>
+                      <td>Y</td>
+                      <td>1999 or 2013</td>
+                    </tr>
+                    <tr>
+                      <td>y</td>
+                      <td>99 or 13</td>
+                    </tr>
+                    <tr>
+                      <th colspan="2" scope="rowgroup">Time</th>
+                    </tr>
+                    <tr>
+                      <td>a</td>
+                      <td>am or pm</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>AM or PM</td>
+                    </tr>
+                    <tr>
+                      <td>g</td>
+                      <td>hour: 1 through 12</td>
+                    </tr>
+                    <tr>
+                      <td>G</td>
+                      <td>hour: 0 through 23</td>
+                    </tr>
+                    <tr>
+                      <td>h</td>
+                      <td>hour: 01 through 12</td>
+                    </tr>
+                    <tr>
+                      <td>H</td>
+                      <td>hour: 00 through 23</td>
+                    </tr>
+                    <tr>
+                      <td>i</td>
+                      <td>minutes: 00 to 59</td>
+                    </tr>
+                    <tr>
+                      <td>s</td>
+                      <td>seconds: 00 through 59</td>
+                    </tr>
                   </tbody>
                 </table>
               </section>
             </section>
+
+            <section>
+              <h2>Markdown</h2>
+              <section>
+
+<h3>Headers</h3>
+<pre><code># An &lt;h1&gt; tag
+## An &lt;h2&gt; tag
+###### An &lt;h6&gt; tag</code></pre>
+
+<h3>Text</h3>
+<pre><code>*This will be italic*
+_This will also be italic
+**This will be bold**
+__This will also be bold__</code></pre>
+
+<h3>Unordered Lists</h3>
+<pre><code>* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b</code></pre>
+
+<h3>Ordered Lists</h3>
+<pre><code>1. Item 1
+2. Item 2
+  * Item 2a
+  * Item 2b</code></pre>
+
+<h3>Images</h3>
+<pre><code>![Statamic Logo](/img/logo.png)</code></pre>
+
+<h3>Links</h3>
+<pre><code>&lt;http://statamic&gt;
+or
+[Statamic](http://statamic.com)</code></pre>
+
+<h3>Email Addresses</h3>
+<pre><code>&lt;email@example.com&gt;</code></pre>
+
+<h3>Blockquotes</h3>
+<pre><code>From the great Ron Swanson:
+
+  > Never half-ass two things, whole-ass one thing.</code></pre>
+
+<h3>Tables</h3>
+<pre><code>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell</code></pre>
+
+<h3>Code Blocks</h3>
+<pre><code>~~~ {.add .classes .here}
+{{ loop }}
+  {{ variable }}
+{{ /loop }}
+~~~</code></pre>
+
+<h3>Inline Code</h3>
+<pre><code>Check out `{{ transform }}`.</code></pre>
+
+<h3>Mixing HTML</h3>
+<pre><code>You can write HTML inside Markdown, and even parse it like so:
+
+&lt;article markdown="1"&gt;
+  # Your Content
+&lt;/article&gt;
+</code></pre>
+
+              </section>
+            </section>
+
+
           </div>
         </div>
       </div><!-- end .blocks -->

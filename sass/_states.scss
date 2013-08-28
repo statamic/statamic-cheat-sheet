@@ -12,9 +12,122 @@
     font-size: 100%;
   }
 }
+
 // CSS COLUMN BREAKPOINTS
-@media only screen and ( max-width: 1900px ) { .blocks { @include column-count(6); } }
-@media only screen and ( max-width: 1600px ) { .blocks { @include column-count(5); } }
-@media only screen and ( max-width: 1300px ) { .blocks { @include column-count(4); } }
-@media only screen and ( max-width: 1000px ) { .blocks { @include column-count(3); } }
-@media only screen and ( max-width: 700px ) { .blocks { @include column-count(2); } }
+@media only screen and ( min-width: 600px ) {
+  .blocks { @include column-count(2); }
+  }
+
+@media only screen and ( min-width: 900px ) {
+  .area#tags h1 { padding-top: 100px; }
+  header[role="banner"] {
+    position: fixed;
+    h1 {
+      text-align: left;
+      width: auto;
+      line-height: 80px;
+      height: 80px;
+      small { display: inline; }
+      }
+    nav {
+      float: right;
+      width: auto;
+      a {
+        float: left;
+        line-height: 80px;
+      }
+    }
+  }
+  body.slim-header {
+    header[role="banner"] {
+      @include box-shadow(0 0 5px rgba(#000,1));
+      h1 { line-height: 40px; height: 40px; font-size: 20px; @include transition(.3s linear); }
+      nav a { line-height: 40px; @include transition(.3s linear); }
+      }
+     }
+  .blocks { @include column-count(3); }
+  }
+
+@media only screen and ( min-width: 1200px ) { .blocks { @include column-count(4); } }
+@media only screen and ( min-width: 1500px ) { .blocks { @include column-count(5); } }
+@media only screen and ( min-width: 1800px ) { .blocks { @include column-count(6); } }
+
+
+// PRINT STYLESHEET
+
+@media print {
+  * { background: transparent !important; box-shadow: none !important; text-shadow: none !important; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  body { font-size: .65em; color: #000; }
+  h2, h3 { page-break-after: avoid; }
+  header[role="banner"] h1 { height: auto; line-height: 1.5; }
+  .blocks {
+    > section {
+      @include column-count(5);
+      width: 18%;
+      margin: 0 1% 2em;
+      float: left;
+      display: block;
+      page-break-inside: avoid;
+      &:nth-child(5n+1) { clear: left; }
+      h2, h3 {
+        margin: 0;
+        padding: 0px;
+      }
+      h2 {
+        color: #000;
+        letter-spacing: normal;
+        font-size: 1.1em;
+        font-weight: bold;
+        }
+      a:hover h2 { color: #fff; }
+      h3 {
+        font-size: .1em!important;
+        color: #ddd;
+        letter-spacing: normal;
+        }
+      ul {
+        border-top: none;
+        }
+      li {
+        color: #555;
+        padding: 0px;
+        line-height: 1.5;
+        font-size: .75em;
+        border-bottom: none;
+        }
+      a.trigger {
+        display: none;
+        }
+      ul ul {
+        display: block;
+        background: none;
+        padding: 2px 0 4px;
+        position: static;
+        border-top: 0px;
+        margin: 0;
+        li {
+          border: none;
+          background: none;
+          border-right: 1px solid #ddd;
+          font-size:  inherit;
+          color: #bbb;
+          padding: 0px 3px 0 0px;
+          margin: 0;
+          font-style: italic;
+          &:last-child { border-right: none; }
+          }
+        }
+      li.close-block { ul { display: block; } }
+      }
+    }
+  nav { display: none!important; }
+  .area#tags h1 { padding-top: 0px; }
+}

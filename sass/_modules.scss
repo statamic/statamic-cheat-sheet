@@ -144,6 +144,7 @@ header[role="banner"] {
         font-size: 13px;
         margin: 0 2px 2px 0;
         color: $statamicTan;
+        small { display: inline; }
         a {
           color: $statamicTan;
           &:hover { color: #fff;} }

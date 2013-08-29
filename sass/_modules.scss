@@ -109,6 +109,13 @@ header[role="banner"] {
       font-size: .85em;
       border-bottom: 1px solid $statamicTan;
       position: relative;
+      a {
+        color: $fontColor;
+        &:hover {
+          color: darken($fontColor,15%);
+          text-decoration: underline;
+          }
+        }
       }
     a.trigger {
       float: right;
@@ -135,7 +142,10 @@ header[role="banner"] {
         padding-right: 12px;
         font-size: 13px;
         margin: 0 2px 2px 0;
-        color: #fff;
+        color: $statamicTan;
+        a {
+          color: $statamicTan;
+          &:hover { color: #fff;} }
         }
       }
     li.close-block {

@@ -695,7 +695,14 @@ header[role="banner"] {
       font-size: .85em;
       border-bottom: 1px solid #f5f4ee;
       position: relative; }
-    /* line 113, ../sass/_modules.scss */
+      /* line 112, ../sass/_modules.scss */
+      .blocks > section li a {
+        color: #807f79; }
+        /* line 114, ../sass/_modules.scss */
+        .blocks > section li a:hover {
+          color: #595854;
+          text-decoration: underline; }
+    /* line 120, ../sass/_modules.scss */
     .blocks > section a.trigger {
       float: right;
       display: block;
@@ -703,7 +710,7 @@ header[role="banner"] {
       background: #dfe4e6;
       color: #fff;
       background: #354144; }
-    /* line 121, ../sass/_modules.scss */
+    /* line 128, ../sass/_modules.scss */
     .blocks > section ul ul {
       display: block;
       background: #354144;
@@ -714,7 +721,7 @@ header[role="banner"] {
       z-index: 1;
       width: 100%;
       border-top: 0px; }
-      /* line 131, ../sass/_modules.scss */
+      /* line 138, ../sass/_modules.scss */
       .blocks > section ul ul li {
         display: inline-block;
         border: none;
@@ -722,27 +729,33 @@ header[role="banner"] {
         padding-right: 12px;
         font-size: 13px;
         margin: 0 2px 2px 0;
-        color: #fff; }
-    /* line 142, ../sass/_modules.scss */
+        color: #f5f4ee; }
+        /* line 146, ../sass/_modules.scss */
+        .blocks > section ul ul li a {
+          color: #f5f4ee; }
+          /* line 148, ../sass/_modules.scss */
+          .blocks > section ul ul li a:hover {
+            color: #fff; }
+    /* line 152, ../sass/_modules.scss */
     .blocks > section li.close-block a.trigger {
       background: #dfe4e6; }
-    /* line 143, ../sass/_modules.scss */
+    /* line 153, ../sass/_modules.scss */
     .blocks > section li.close-block ul {
       display: none; }
 
-/* line 148, ../sass/_modules.scss */
+/* line 158, ../sass/_modules.scss */
 .blocks-tags h2 {
   background-color: #354144; }
 
-/* line 149, ../sass/_modules.scss */
+/* line 159, ../sass/_modules.scss */
 .blocks-fieldtypes h2 {
   background-color: #364539; }
 
-/* line 150, ../sass/_modules.scss */
+/* line 160, ../sass/_modules.scss */
 .blocks-reference h2 {
   background-color: #403645; }
 
-/* line 152, ../sass/_modules.scss */
+/* line 162, ../sass/_modules.scss */
 .area {
   padding: 0 0 2em;
   border-bottom: 1px solid #e2dfce;

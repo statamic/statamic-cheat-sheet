@@ -124,6 +124,7 @@ header[role="banner"] {
       background: lighten($mainColor,65%);
       color: #fff;
       background: $mainColor;
+      &:hover { text-decoration: none; }
       }
     ul ul {
       display: block;

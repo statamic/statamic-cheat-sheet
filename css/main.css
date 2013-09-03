@@ -681,7 +681,7 @@ header[role="banner"] {
       text-transform: uppercase;
       color: #899ea3;
       background: #dfe4e6;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
       line-height: 2;
       font-weight: bold; }
     /* line 100, ../sass/_modules.scss */

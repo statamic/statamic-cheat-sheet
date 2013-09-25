@@ -17,6 +17,7 @@ header[role="banner"] {
   top: 0;
   width: 100%;
   z-index: 2;
+  .container { padding: 0; }
   h1 {
     margin-bottom: 0;
     color: #fff;
@@ -35,7 +36,6 @@ header[role="banner"] {
     color: $statamicTan;
     }
   nav {
-    float: right;
     width: 100%;
     text-align: center;
     display: block;
@@ -93,7 +93,7 @@ header[role="banner"] {
       text-transform: uppercase;
       color: lighten($mainColor,35%);
       background: lighten($mainColor,65%);
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
       line-height: 2;
       font-weight: bold;
       }

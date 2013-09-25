@@ -582,6 +582,9 @@ header[role="banner"] {
   width: 100%;
   z-index: 2; }
   /* line 20, ../sass/_modules.scss */
+  header[role="banner"] .container {
+    padding: 0; }
+  /* line 21, ../sass/_modules.scss */
   header[role="banner"] h1 {
     margin-bottom: 0;
     color: #fff;
@@ -590,17 +593,16 @@ header[role="banner"] {
     float: left;
     text-align: center;
     width: 100%; }
-    /* line 28, ../sass/_modules.scss */
+    /* line 29, ../sass/_modules.scss */
     header[role="banner"] h1 small {
       display: none;
       font-size: 50%; }
-  /* line 33, ../sass/_modules.scss */
+  /* line 34, ../sass/_modules.scss */
   header[role="banner"] p {
     margin: 0;
     color: #f5f4ee; }
-  /* line 37, ../sass/_modules.scss */
+  /* line 38, ../sass/_modules.scss */
   header[role="banner"] nav {
-    float: right;
     width: 100%;
     text-align: center;
     display: block; }
@@ -679,7 +681,7 @@ header[role="banner"] {
       text-transform: uppercase;
       color: #899ea3;
       background: #dfe4e6;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
       line-height: 2;
       font-weight: bold; }
     /* line 100, ../sass/_modules.scss */
@@ -789,29 +791,32 @@ header[role="banner"] {
   header[role="banner"] {
     position: fixed; }
     /* line 25, ../sass/_states.scss */
+    header[role="banner"] .container {
+      padding: 0 1.5em; }
+    /* line 26, ../sass/_states.scss */
     header[role="banner"] h1 {
       text-align: left;
       width: auto;
       line-height: 80px;
       height: 80px; }
-      /* line 30, ../sass/_states.scss */
+      /* line 31, ../sass/_states.scss */
       header[role="banner"] h1 small {
         display: inline; }
-    /* line 32, ../sass/_states.scss */
+    /* line 33, ../sass/_states.scss */
     header[role="banner"] nav {
       float: right;
       width: auto; }
-      /* line 35, ../sass/_states.scss */
+      /* line 36, ../sass/_states.scss */
       header[role="banner"] nav a {
         float: left;
         line-height: 80px; }
 
-  /* line 42, ../sass/_states.scss */
+  /* line 43, ../sass/_states.scss */
   body.slim-header header[role="banner"] {
     -webkit-box-shadow: 0 0 5px black;
     -moz-box-shadow: 0 0 5px black;
     box-shadow: 0 0 5px black; }
-    /* line 44, ../sass/_states.scss */
+    /* line 45, ../sass/_states.scss */
     body.slim-header header[role="banner"] h1 {
       line-height: 40px;
       height: 40px;
@@ -820,7 +825,7 @@ header[role="banner"] {
       -moz-transition: 0.3s linear;
       -o-transition: 0.3s linear;
       transition: 0.3s linear; }
-    /* line 45, ../sass/_states.scss */
+    /* line 46, ../sass/_states.scss */
     body.slim-header header[role="banner"] nav a {
       line-height: 40px;
       -webkit-transition: 0.3s linear;
@@ -828,7 +833,7 @@ header[role="banner"] {
       -o-transition: 0.3s linear;
       transition: 0.3s linear; }
 
-  /* line 48, ../sass/_states.scss */
+  /* line 49, ../sass/_states.scss */
   .blocks {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -836,7 +841,7 @@ header[role="banner"] {
     -o-column-count: 3;
     column-count: 3; } }
 @media only screen and (min-width: 1200px) {
-  /* line 51, ../sass/_states.scss */
+  /* line 52, ../sass/_states.scss */
   .blocks {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -844,7 +849,7 @@ header[role="banner"] {
     -o-column-count: 4;
     column-count: 4; } }
 @media only screen and (min-width: 1500px) {
-  /* line 52, ../sass/_states.scss */
+  /* line 53, ../sass/_states.scss */
   .blocks {
     -webkit-column-count: 5;
     -moz-column-count: 5;
@@ -852,7 +857,7 @@ header[role="banner"] {
     -o-column-count: 5;
     column-count: 5; } }
 @media only screen and (min-width: 1800px) {
-  /* line 53, ../sass/_states.scss */
+  /* line 54, ../sass/_states.scss */
   .blocks {
     -webkit-column-count: 6;
     -moz-column-count: 6;
@@ -860,60 +865,60 @@ header[role="banner"] {
     -o-column-count: 6;
     column-count: 6; } }
 @media print {
-  /* line 59, ../sass/_states.scss */
+  /* line 60, ../sass/_states.scss */
   * {
     background: transparent !important;
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 60, ../sass/_states.scss */
+  /* line 61, ../sass/_states.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  /* line 61, ../sass/_states.scss */
+  /* line 62, ../sass/_states.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: ""; }
 
-  /* line 62, ../sass/_states.scss */
+  /* line 63, ../sass/_states.scss */
   pre, blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid; }
 
-  /* line 63, ../sass/_states.scss */
+  /* line 64, ../sass/_states.scss */
   thead {
     display: table-header-group; }
 
-  /* line 64, ../sass/_states.scss */
+  /* line 65, ../sass/_states.scss */
   tr, img {
     page-break-inside: avoid; }
 
-  /* line 65, ../sass/_states.scss */
+  /* line 66, ../sass/_states.scss */
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
 
-  /* line 67, ../sass/_states.scss */
+  /* line 68, ../sass/_states.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 68, ../sass/_states.scss */
+  /* line 69, ../sass/_states.scss */
   body {
     font-size: .65em;
     color: #000; }
 
-  /* line 69, ../sass/_states.scss */
+  /* line 70, ../sass/_states.scss */
   h2, h3 {
     page-break-after: avoid; }
 
-  /* line 70, ../sass/_states.scss */
+  /* line 71, ../sass/_states.scss */
   header[role="banner"] h1 {
     height: auto;
     line-height: 1.5; }
 
-  /* line 72, ../sass/_states.scss */
+  /* line 73, ../sass/_states.scss */
   .blocks > section {
     -webkit-column-count: 5;
     -moz-column-count: 5;
@@ -925,41 +930,41 @@ header[role="banner"] {
     float: left;
     display: block;
     page-break-inside: avoid; }
-    /* line 79, ../sass/_states.scss */
+    /* line 80, ../sass/_states.scss */
     .blocks > section:nth-child(5n+1) {
       clear: left; }
-    /* line 80, ../sass/_states.scss */
+    /* line 81, ../sass/_states.scss */
     .blocks > section h2, .blocks > section h3 {
       margin: 0;
       padding: 0px; }
-    /* line 84, ../sass/_states.scss */
+    /* line 85, ../sass/_states.scss */
     .blocks > section h2 {
       color: #000;
       letter-spacing: normal;
       font-size: 1.1em;
       font-weight: bold; }
-    /* line 90, ../sass/_states.scss */
+    /* line 91, ../sass/_states.scss */
     .blocks > section a:hover h2 {
       color: #fff; }
-    /* line 91, ../sass/_states.scss */
+    /* line 92, ../sass/_states.scss */
     .blocks > section h3 {
       font-size: .1em!important;
       color: #ddd;
       letter-spacing: normal; }
-    /* line 96, ../sass/_states.scss */
+    /* line 97, ../sass/_states.scss */
     .blocks > section ul {
       border-top: none; }
-    /* line 99, ../sass/_states.scss */
+    /* line 100, ../sass/_states.scss */
     .blocks > section li {
       color: #555;
       padding: 0px;
       line-height: 1.5;
       font-size: .75em;
       border-bottom: none; }
-    /* line 106, ../sass/_states.scss */
+    /* line 107, ../sass/_states.scss */
     .blocks > section a.trigger {
       display: none; }
-    /* line 109, ../sass/_states.scss */
+    /* line 110, ../sass/_states.scss */
     .blocks > section ul ul {
       display: block;
       background: none;
@@ -967,7 +972,7 @@ header[role="banner"] {
       position: static;
       border-top: 0px;
       margin: 0; }
-      /* line 116, ../sass/_states.scss */
+      /* line 117, ../sass/_states.scss */
       .blocks > section ul ul li {
         border: none;
         background: none;
@@ -977,17 +982,17 @@ header[role="banner"] {
         padding: 0px 3px 0 0px;
         margin: 0;
         font-style: italic; }
-        /* line 125, ../sass/_states.scss */
+        /* line 126, ../sass/_states.scss */
         .blocks > section ul ul li:last-child {
           border-right: none; }
-    /* line 128, ../sass/_states.scss */
+    /* line 129, ../sass/_states.scss */
     .blocks > section li.close-block ul {
       display: block; }
 
-  /* line 131, ../sass/_states.scss */
+  /* line 132, ../sass/_states.scss */
   nav {
     display: none!important; }
 
-  /* line 132, ../sass/_states.scss */
+  /* line 133, ../sass/_states.scss */
   .area#tags h1 {
     padding-top: 0px; } }

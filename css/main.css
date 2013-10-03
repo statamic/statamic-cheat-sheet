@@ -650,11 +650,17 @@ header[role="banner"] {
   column-gap: 1.5em; }
   /* line 70, ../sass/_modules.scss */
   .blocks > section {
-    -webkit-column-break-inside: avoid;
-    column-break-inside: avoid;
     -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.05);
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-break-inside: avoid;
+    -moz-break-inside: avoid;
+    -ms-break-inside: avoid;
+    break-inside: avoid;
     margin-right: 3px;
     display: inline-block;
     width: 99%;

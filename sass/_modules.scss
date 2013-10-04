@@ -68,8 +68,15 @@ header[role="banner"] {
   @include column-count(1);
   @include column-gap(1.5em);
   > section {
-    @include column-break-inside(avoid);
     @include box-shadow(3px 3px 0px rgba(#000,0.05));
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-break-inside: avoid;
+    -moz-break-inside: avoid;
+    -ms-break-inside: avoid;
+    break-inside: avoid;
     margin-right: 3px;
     display: inline-block;
     width: 99%;
@@ -93,7 +100,7 @@ header[role="banner"] {
       text-transform: uppercase;
       color: lighten($mainColor,35%);
       background: lighten($mainColor,65%);
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
       line-height: 2;
       font-weight: bold;
       }

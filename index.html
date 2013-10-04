@@ -877,9 +877,27 @@
             </section>
 
             <section>
-              <h2>Global Variables</h2>
+              <h2><a href="http://statamic.com/learn/documentation/global-variables">Global Variables</a></h2>
               <section>
                 <ul>
+                  <li>current_date</li>
+                  <li>current_url</li>
+                  <li>environment</li>
+                  <li>homepage</li>
+                  <li>is_admin</li>
+                  <li>is_{environment_name}</li>
+                  <li>last_modified</li>
+                  <li>last_segment</li>
+                  <li>logged_in</li>
+                  <li>next</li>
+                  <li>page_url</li>
+                  <li>permalink</li>
+                  <li>prev</li>
+                  <li>segment_x</li>
+                  <li>taxonomy_name</li>
+                  <li>taxonomy_slug</li>
+                  <li>theme_path</li>
+                  <li>username</li>
                   <li>_site_name</li>
                   <li>_site_root</li>
                   <li>_site_url</li>
@@ -1075,6 +1093,55 @@ Content Cell  | Content Cell</code></pre>
                 </ul>
               </section>
             </section>
+
+            <section>
+              <h2>YAML</h2>
+              <section>
+<h3>Strings</h3>
+<pre><code>myName: Davey Crocket
+protectedBy: "Quote marks >&'":"</code></pre>
+<h3>String blocks</h3>
+<pre><code>myHTML1: >
+  &lt;p>Use a greater symbol to strip new lines&lt;/p>
+
+myHTML2: |
+  &lt;p>Or a pipe to perserve them&lt;/p></code></pre>
+<h3>Lists (Arrays)</h3>
+<pre><code>shoppingList1:
+  - scotch
+  - beard trimmer
+  - flowers
+
+shoppingList2: [scotch, flowers]
+</code></pre>
+<h3>Named Lists (String Key Arrays)</h3>
+<pre><code>details:
+  firstName: Ned
+  lastName: Stark
+  hometown: Winterfell</code></pre>
+<h3>Associative Arrays</h3>
+<pre><code>myList:
+  -
+    name: Abed
+    school: Greendale
+  -
+    name: Troy
+    school: Greendale</code></pre>
+<h3>Associative Arrays with Named Keys</h3>
+<pre><code>places:
+  vacation:
+    - Ireland
+    - Australia
+  work:
+    - San Francisco
+    - Atlanta
+</code></pre>
+<h3>Comment</h3>
+<pre><code>#status: live
+</code></pre>
+              </section>
+            </section>
+
 
           </div>
         </div>

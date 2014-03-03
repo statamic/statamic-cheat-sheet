@@ -73,6 +73,42 @@
           </section>
 
           <section>
+            <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:previous }}">
+              <h2>{{ entries:previous }}</h2>
+            </a>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>current</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Variables</h3>
+                <ul>
+                  <li>has_next</li>
+                </ul>
+            </section>
+          </section>
+
+          <section>
+            <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:next }}">
+              <h2>{{ entries:next }}</h2>
+            </a>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>current</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Variables</h3>
+                <ul>
+                  <li>has_next</li>
+                </ul>
+            </section>
+          </section>
+
+          <section>
             <h2>{{ entries:pagination }}</h2>
             <section>
               <h3>Parameters</h3>
@@ -96,6 +132,7 @@
           </section>
 
           <section>
+<<<<<<< HEAD
             <h2>{{ entries:next }}</h2>
             <section>
               <h3>Parameters</h3>
@@ -127,6 +164,9 @@
                     
           <section>
             <h2>{{ entries:map }}</h2>
+=======
+            <h2>{{ location:map_listing }}</h2>
+>>>>>>> master
             <section>
               <h3>Parameters</h3>
               <ul>
@@ -136,6 +176,31 @@
                 <li>zoom</li>
                 <li>map_id</li>
                 <li>clusters</li>
+                <li>type
+                  <ul>
+                    <li>entries</li>
+                    <li>pages</li>
+                    <li>all</li>
+                  </ul>
+                </li>
+                <li>*override all variables in location.yaml</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ entries:meld }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>field</li>
+                <li>action
+                  <ul>
+                    <li>sum (default)</li>
+                    <li>average</li>
+                  </ul>
+                </li>
+                <li>precision</li>
               </ul>
             </section>
           </section>
@@ -160,12 +225,39 @@
               <h3>Parameters</h3>
               <ul>
                 <li>match</li>
+                <li>exclude</li>
                 <li>extension</li>
                 <li>in</li>
                 <li>not_in</li>
                 <li>file_size</li>
                 <li>file_date</li>
                 <li>depth</li>
+                <li>sort_by
+                  <ul>
+                    <li>file</li>
+                    <li>type</li>
+                    <li>size</li>
+                  </ul>
+                </li>
+                <li>sort_dir
+                  <ul>
+                    <li>asc (default)</li>
+                    <li>desc</li>
+                  </ul>
+                </li>
+                <li>limit</li>
+              </ul>
+              <h3>Variables</h3>
+              <ul>
+                <li>file</li>
+                <li>filename</li>
+                <li>extension</li>
+                <li>size</li>
+                <li>size_bytes</li>
+                <li>size_kilobytes</li>
+                <li>size_megabytes</li>
+                <li>size_gigabytes</li>
+                <li>is_image</li>
               </ul>
             </section>
           </section>
@@ -214,6 +306,7 @@
                 <li>offset</li>
                 <li>sort_by</li>
                 <li>sort_dir</li>
+                <li>username</li>
               </ul>
             </section>
           </section>
@@ -235,11 +328,26 @@
             <section>
               <h3>Variables</h3>
               <ul>
+                <li>first</li>
+                <li>last</li>
                 <li>is_current</li>
                 <li>is_parent</li>
                 <li>url</li>
                 <li>title</li>
                 <li>children</li>
+                <li>*recursive children*</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ nav:exists }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>from</li>
+                <li>max_depth</li>
+                <li>folders_only</li>
               </ul>
             </section>
           </section>
@@ -295,6 +403,23 @@
                 <li>index</li>
                 <li>zero_index</li>
                 <li>total_results</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ pages:meld }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>field</li>
+                <li>action
+                  <ul>
+                    <li>sum (default)</li>
+                    <li>average</li>
+                  </ul>
+                </li>
+                <li>precision</li>
               </ul>
             </section>
           </section>
@@ -470,6 +595,18 @@
           </section>
 
           <section>
+            <h2>checkboxes</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>instructions</li>
+                <li>options</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
             <h2>color</h2>
             <section>
               <h3>Options</h3>
@@ -610,12 +747,21 @@
                 <li>image_dir</li>
                 <li>instructions</li>
                 <li>resize
+<<<<<<< HEAD
                   <ul>
                     <li>width</li>
                     <li>height</li>
                     <li>quality</li>
                     <li>upsize</li>
                   </ul>
+=======
+                    <ul>
+                      <li>width</li>
+                      <li>height</li>
+                      <li>quality</li>
+                      <li>upsize</li>
+                    </ul>
+>>>>>>> master
                 </li>
               </ul>
             </section>

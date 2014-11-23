@@ -190,29 +190,6 @@
           </section>
 
           <section>
-            <h2>{{ entries:map }}</h2>
-            <section>
-              <h3>Parameters</h3>
-              <ul>
-                <li>folder</li>
-                <li>center_point</li>
-                <li>locate_with</li>
-                <li>zoom</li>
-                <li>map_id</li>
-                <li>clusters</li>
-                <li>type
-                  <ul>
-                    <li>entries</li>
-                    <li>pages</li>
-                    <li>all</li>
-                  </ul>
-                </li>
-                <li>*override all variables in location.yaml</li>
-              </ul>
-            </section>
-          </section>
-
-          <section>
             <h2>{{ entries:meld }}</h2>
             <section>
               <h3>Parameters</h3>
@@ -292,6 +269,44 @@
 
           <section>
             <h2>{{ get:post[variable] }}</h2>
+          </section>
+
+          <section>
+            <h2>{{ location:map_listing }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>folder</li>
+                <li>center_point</li>
+                <li>locate_with</li>
+                <li>zoom</li>
+                <li>map_id</li>
+                <li>clusters</li>
+                <li>type
+                  <ul>
+                    <li>entries</li>
+                    <li>pages</li>
+                    <li>all</li>
+                  </ul>
+                </li>
+                <li>*override all variables in location.yaml</li>
+              </ul>
+            </section>
+          </section>
+          
+          <section>
+            <h2>{{ location:map_url }}</h2>
+            <section>
+              <ul>
+                <li>locate_with</li>
+                <li>open_popup
+                  <ul>
+                    <li>true</li>
+                    <li>false</li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
           </section>
 
           <section>
@@ -648,6 +663,7 @@
                     <li>gif</li>
                   </ul>
                 </li>
+                <li>watermark</li>
               </ul>
             </section>
           </section>
@@ -724,9 +740,24 @@
               <h3>Options</h3>
               <ul>
                 <li>allowed</li>
+                <li>browse
+                  <ul>
+                    <li>true</li>
+                    <li>false</li>
+                  </ul>
+                </li>
                 <li>destination</li>
                 <li>display</li>
                 <li>instructions</li>
+                <li>max_files</li>
+                <li>resize
+                  <ul>
+                    <li>width</li>
+                    <li>height</li>
+                    <li>quality</li>
+                    <li>upsize</li>
+                  </ul>
+                </li>
               </ul>
             </section>
           </section>
@@ -802,6 +833,23 @@
           </section>
 
           <section>
+            <h2>table</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Variables</h3>
+              <ul>
+                <li>first_row_headers</li>
+                <li>cells</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
             <h2>radio</h2>
             <section>
               <h3>Options</h3>
@@ -834,6 +882,20 @@
               </ul>
             </section>
           </section>
+          
+          <section>
+            <h2>replicator</h2>
+            <section>
+              <h3>Options</h3>
+              <ul>
+                <li>display</li>
+                <li>instructions</li>
+                <li>sets</li>
+              </ul>
+            </section>
+          </section>
+
+
 
           <section>
             <h2>section</h2>

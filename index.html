@@ -53,6 +53,9 @@
             </a>
           </section>
           <section>
+            <h2>{{ control_panel_edit_url }}</h2>
+          </section>
+          <section>
             <a href="http://statamic.com/learn/documentation/tags/entries" title="{{ entries:listing }}">
               <h2>{{ entries:listing }}</h2>
             </a>
@@ -67,6 +70,7 @@
                 <li>show_past</li>
                 <li>show_future</li>
                 <li>conditions</li>
+                <li>sort</li>
                 <li>sort_by</li>
                 <li>sort_dir</li>
                 <li>limit</li>
@@ -100,6 +104,8 @@
               <h3>Parameters</h3>
               <ul>
                 <li>current</li>
+                <li>sort</li>
+                <li>wrap</li>
               </ul>
             </section>
             <section>
@@ -118,6 +124,8 @@
               <h3>Parameters</h3>
               <ul>
                 <li>current</li>
+                <li>sort</li>
+                <li>wrap</li>
               </ul>
             </section>
             <section>
@@ -300,7 +308,7 @@
               </ul>
             </section>
 
-          </section>
+          <section>
             <h2>{{ member:forgot_password_form }}</h2>
           </section>
 
@@ -431,6 +439,7 @@
                 <li>taxonomy</li>
                 <li>show_hidden</li>
                 <li>conditions</li>
+                <li>sort</li>
                 <li>sort_by</li>
                 <li>sort_dir</li>
                 <li>limit</li>
@@ -445,6 +454,42 @@
                 <li>index</li>
                 <li>zero_index</li>
                 <li>total_results</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ pages:next }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>current</li>
+                <li>sort</li>
+                <li>wrap</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Available Tags</h3>
+              <ul>
+                <li>has_previous</li>
+              </ul>
+            </section>
+          </section>
+
+          <section>
+            <h2>{{ pages:previous }}</h2>
+            <section>
+              <h3>Parameters</h3>
+              <ul>
+                <li>current</li>
+                <li>sort</li>
+                <li>wrap</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Available Tags</h3>
+              <ul>
+                <li>has_next</li>
               </ul>
             </section>
           </section>
